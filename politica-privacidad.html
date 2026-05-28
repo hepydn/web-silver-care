@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad | Silver &amp; Care — Henderson, Nevada USA</title>
+  <meta name="description" content="Política de Privacidad de Silver &amp; Care LLC. Información sobre recopilación, uso y protección de datos personales. CCPA · RGPD." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Silver &amp; Care" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"index.html"},{"@type":"ListItem","position":2,"name":"Política de Privacidad","item":"politica-privacidad.html"}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #FFFFFF; --offwhite: #F7F7F5; --stone: #EFEFED;
+      --silver: #C8CDD4; --silver-dark: #9AA0A6; --silver-light: #E2E5E9;
+      --charcoal: #2A2A2A; --black: #0A0A0A; --gray: #6B6B6B;
+      --border: rgba(200,205,212,0.2);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', Helvetica, sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); font-weight: 300; background: var(--white); color: var(--charcoal); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: 0.08s; } .d2 { transition-delay: 0.16s; } .d3 { transition-delay: 0.24s; }
+
+    /* HEADER */
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; height: 68px; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; background: rgba(10,10,10,0.92); border-bottom: 1px solid rgba(200,205,212,0.08); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); transition: all 0.4s; }
+    header.scrolled { background: rgba(10,10,10,0.98); border-bottom-color: rgba(200,205,212,0.15); }
+    .nav-logo { display: flex; align-items: baseline; }
+    .nav-logo-ag { font-family: var(--font-display); font-size: 21px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.02em; }
+    .nav-logo-brand { font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); margin-left: 12px; }
+    nav ul { display: flex; align-items: center; gap: 36px; list-style: none; }
+    nav ul a { font-size: 9px; letter-spacing: 0.26em; text-transform: uppercase; color: rgba(226,229,233,0.7); position: relative; transition: color 0.3s; padding-bottom: 2px; }
+    nav ul a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: var(--silver); transition: width 0.35s; }
+    nav ul a:hover { color: var(--white); }
+    nav ul a:hover::after { width: 100%; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px; }
+    .hamburger span { display: block; width: 22px; height: 1px; background: var(--silver); transition: all 0.35s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .mobile-menu { position: fixed; top: 68px; left: 0; right: 0; background: rgba(8,8,8,0.98); border-bottom: 1px solid rgba(200,205,212,0.08); padding: 32px 40px; z-index: 9998; transform: translateY(-108%); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); backdrop-filter: blur(20px); }
+    .mobile-menu.open { transform: translateY(0); }
+    .mobile-menu a { display: block; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-light); padding: 16px 0; border-bottom: 1px solid rgba(200,205,212,0.06); transition: color 0.3s; }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu a:hover { color: var(--white); }
+
+    /* HERO */
+    .page-hero { padding: 140px 80px 100px; background: var(--black); position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 70% at 15% 60%, rgba(200,205,212,0.07) 0%, transparent 60%); pointer-events: none; }
+    .page-hero-inner { position: relative; z-index: 2; max-width: 700px; }
+    .page-hero-eyebrow { font-size: 9px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 32px; display: flex; align-items: center; gap: 12px; }
+    .page-hero-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--silver-dark); }
+    .page-hero-title { font-family: var(--font-display); font-size: clamp(44px, 5.5vw, 80px); font-weight: 300; line-height: 0.93; color: var(--silver-light); margin-bottom: 28px; letter-spacing: -0.02em; }
+    .page-hero-title em { font-style: italic; color: var(--silver); }
+    .page-hero-date { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(154,160,166,0.4); }
+
+    /* CONTENT */
+    .content-wrap { max-width: 900px; margin: 0 auto; padding: 100px 80px; }
+    .info-box { background: var(--offwhite); border: 1px solid rgba(200,205,212,0.15); border-left: 2px solid var(--silver); padding: 40px 48px; margin-bottom: 72px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px 48px; }
+    .info-item-label { font-size: 8px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 6px; display: block; }
+    .info-item-value { font-size: 14px; font-weight: 400; color: var(--charcoal); line-height: 1.5; }
+    .legal-section { margin-bottom: 64px; padding-bottom: 64px; border-bottom: 1px solid rgba(200,205,212,0.1); }
+    .legal-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .section-num { font-family: var(--font-display); font-size: 56px; font-weight: 300; color: rgba(200,205,212,0.2); line-height: 1; display: block; margin-bottom: -12px; }
+    .section-title { font-family: var(--font-display); font-size: clamp(22px, 2.5vw, 34px); font-weight: 300; color: var(--charcoal); margin-bottom: 28px; line-height: 1.1; }
+    .section-title em { font-style: italic; color: var(--silver-dark); }
+    .text { font-size: 15px; line-height: 1.95; color: var(--gray); margin-bottom: 18px; }
+    .text:last-child { margin-bottom: 0; }
+    .text strong { font-weight: 500; color: var(--charcoal); }
+    .legal-list { list-style: none; margin: 20px 0; }
+    .legal-list li { font-size: 14px; line-height: 1.85; color: var(--gray); padding: 14px 0 14px 22px; border-bottom: 1px solid rgba(200,205,212,0.1); position: relative; }
+    .legal-list li:last-child { border-bottom: none; }
+    .legal-list li::before { content: ''; position: absolute; left: 0; top: 22px; width: 5px; height: 5px; border-radius: 50%; background: var(--silver); opacity: 0.6; }
+    .legal-list li strong { font-weight: 500; color: var(--charcoal); }
+    .rights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-top: 28px; }
+    .right-item { padding: 28px 28px; background: var(--offwhite); border: 1px solid rgba(200,205,212,0.1); transition: all 0.3s; }
+    .right-item:hover { background: var(--white); border-color: rgba(200,205,212,0.3); transform: translateY(-3px); }
+    .right-name { font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--charcoal); display: block; margin-bottom: 10px; }
+    .right-desc { font-size: 13px; line-height: 1.75; color: var(--gray); }
+    .contact-box { background: var(--black); padding: 44px 48px; margin-top: 28px; }
+    .contact-box-name { font-family: var(--font-display); font-size: 24px; font-weight: 300; color: var(--silver-light); margin-bottom: 24px; display: block; }
+    .contact-box-body { font-size: 14px; line-height: 2; color: var(--silver-dark); }
+    .contact-box-body strong { color: var(--silver-light); font-weight: 400; }
+
+    /* FOOTER */
+    footer { background: #0d0d0d; border-top: 1px solid rgba(200,205,212,0.06); padding: 56px 80px 32px; }
+    .footer-top { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 40px; border-bottom: 1px solid rgba(200,205,212,0.06); flex-wrap: wrap; gap: 24px; }
+    .footer-logo-ag { font-family: var(--font-display); font-size: 22px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.02em; display: block; }
+    .footer-logo-brand { font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); display: block; margin-bottom: 14px; }
+    .footer-tagline { font-size: 12px; color: rgba(154,160,166,0.4); max-width: 280px; line-height: 1.7; margin-bottom: 24px; }
+    .footer-social { display: flex; gap: 8px; }
+    .social-btn { width: 34px; height: 34px; border: 1px solid rgba(200,205,212,0.1); display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+    .social-btn:hover { border-color: rgba(200,205,212,0.3); background: rgba(200,205,212,0.05); }
+    .social-btn svg { width: 13px; height: 13px; fill: rgba(154,160,166,0.5); transition: fill 0.3s; }
+    .social-btn:hover svg { fill: var(--silver-light); }
+    .footer-nav { display: flex; flex-direction: column; gap: 12px; }
+    .footer-nav a { font-size: 12px; color: rgba(154,160,166,0.4); transition: color 0.3s; }
+    .footer-nav a:hover { color: var(--silver-light); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 28px; flex-wrap: wrap; gap: 16px; }
+    .footer-copy { font-size: 10px; color: rgba(154,160,166,0.25); letter-spacing: 0.08em; }
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(154,160,166,0.25); transition: color 0.3s; }
+    .footer-legal a:hover { color: var(--silver-dark); }
+
+    @media (max-width: 1100px) {
+      header { padding: 0 32px; }
+      nav ul { display: none; }
+      .hamburger { display: flex; }
+      .page-hero { padding: 120px 40px 80px; }
+      .content-wrap { padding: 72px 40px; }
+      .info-box { grid-template-columns: 1fr; gap: 20px; }
+      .rights-grid { grid-template-columns: 1fr; }
+      footer { padding: 48px 40px 28px; }
+    }
+    @media (max-width: 640px) {
+      header { padding: 0 24px; }
+      .mobile-menu { padding: 28px 24px; }
+      .page-hero { padding: 96px 24px 60px; }
+      .content-wrap { padding: 56px 24px; }
+      .info-box, .contact-box { padding: 28px 24px; }
+      footer { padding: 40px 24px 24px; }
+      .footer-top { flex-direction: column; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+<header id="main-header">
+  <a href="index.html" class="nav-logo"><span class="nav-logo-ag">Ag+</span><span class="nav-logo-brand">Silver &amp; Care</span></a>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul></nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="productos.html">Productos</a><a href="contacto.html">Contacto</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow reveal">Legal · Silver &amp; Care</div>
+    <h1 class="page-hero-title reveal d1">Política de <em>Privacidad.</em></h1>
+    <p class="page-hero-date reveal d2">Última actualización: Mayo 2025</p>
+  </div>
+</section>
+
+<div class="content-wrap">
+  <div class="info-box reveal">
+    <div><span class="info-item-label">Responsable del tratamiento</span><span class="info-item-value">Silver &amp; Care LLC</span></div>
+    <div><span class="info-item-label">Domicilio</span><span class="info-item-value">Henderson, Nevada, USA</span></div>
+    <div><span class="info-item-label">Correo electrónico</span><span class="info-item-value">info@silverandcare.com</span></div>
+    <div><span class="info-item-label">Normativa aplicable</span><span class="info-item-value">CCPA (California) · RGPD (Europa)</span></div>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Información que <em>recopilamos.</em></h2>
+    <p class="text">Silver &amp; Care LLC recopila únicamente la información que el usuario proporciona voluntariamente a través de los formularios disponibles en el sitio web. Los datos que podemos recopilar son:</p>
+    <ul class="legal-list">
+      <li><strong>Nombre</strong> — Proporcionado voluntariamente en el formulario de interés de producto.</li>
+      <li><strong>Correo electrónico</strong> — Proporcionado voluntariamente en el formulario de interés de producto.</li>
+      <li><strong>Producto de interés</strong> — Selección del producto por el que el usuario muestra interés antes de ser redirigido a Amazon.</li>
+      <li><strong>Datos de navegación</strong> — Información técnica como la dirección IP, el tipo de navegador y las páginas visitadas, recopilada automáticamente a través de cookies.</li>
+    </ul>
+    <p class="text">Silver &amp; Care LLC <strong>no recopila</strong> datos de pago ni información financiera. Todas las transacciones se procesan exclusivamente a través de Amazon, que cuenta con su propia política de privacidad.</p>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Cómo usamos <em>tu información.</em></h2>
+    <p class="text">La información recopilada se utiliza exclusivamente para los siguientes fines:</p>
+    <ul class="legal-list">
+      <li><strong>Redirigir al usuario</strong> al producto de su interés en Amazon USA.</li>
+      <li><strong>Comunicaciones comerciales</strong> — En el futuro, para informar al usuario sobre nuevos productos, promociones o novedades de Silver &amp; Care, siempre con su consentimiento previo.</li>
+      <li><strong>Mejora del sitio web</strong> — Analizar cómo los usuarios interactúan con el sitio para mejorar la experiencia de navegación.</li>
+      <li><strong>Cumplimiento legal</strong> — Cuando sea requerido por la legislación aplicable.</li>
+    </ul>
+    <p class="text">Silver &amp; Care LLC <strong>no vende, alquila ni comparte</strong> los datos personales de los usuarios con terceros con fines comerciales.</p>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Base legal del <em>tratamiento.</em></h2>
+    <p class="text">El tratamiento de los datos personales de los usuarios se realiza sobre las siguientes bases legales:</p>
+    <ul class="legal-list">
+      <li><strong>Consentimiento del usuario</strong> — Al completar y enviar el formulario del sitio web, el usuario consiente expresamente el tratamiento de sus datos para los fines indicados.</li>
+      <li><strong>Interés legítimo</strong> — Para el análisis estadístico del tráfico del sitio web con el objetivo de mejorar la experiencia del usuario.</li>
+      <li><strong>Cumplimiento de obligaciones legales</strong> — Cuando la legislación aplicable lo requiera.</li>
+    </ul>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Conservación de <em>los datos.</em></h2>
+    <p class="text">Silver &amp; Care LLC conservará los datos personales de los usuarios durante el tiempo estrictamente necesario para cumplir con los fines para los que fueron recopilados.</p>
+    <p class="text">En caso de que el usuario solicite la baja de comunicaciones comerciales, sus datos serán eliminados de nuestra base de datos en un plazo máximo de <strong>30 días hábiles</strong> desde la recepción de la solicitud.</p>
+    <p class="text">Los datos de navegación anónimos pueden conservarse por un periodo de hasta <strong>24 meses</strong> con fines estadísticos.</p>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">05</span>
+    <h2 class="section-title">Tus derechos sobre <em>tus datos.</em></h2>
+    <p class="text">De acuerdo con la normativa aplicable, el usuario tiene derecho a:</p>
+    <div class="rights-grid">
+      <div class="right-item"><span class="right-name">Acceso</span><p class="right-desc">Solicitar información sobre los datos personales que Silver &amp; Care LLC tiene almacenados sobre ti.</p></div>
+      <div class="right-item"><span class="right-name">Rectificación</span><p class="right-desc">Solicitar la corrección de datos inexactos o incompletos que tengamos sobre ti.</p></div>
+      <div class="right-item"><span class="right-name">Supresión</span><p class="right-desc">Solicitar la eliminación de tus datos personales cuando ya no sean necesarios para los fines que fueron recopilados.</p></div>
+      <div class="right-item"><span class="right-name">Oposición</span><p class="right-desc">Oponerte al tratamiento de tus datos personales en determinadas circunstancias, incluyendo comunicaciones comerciales.</p></div>
+      <div class="right-item"><span class="right-name">Portabilidad</span><p class="right-desc">Recibir tus datos en un formato estructurado y de uso común para transferirlos a otro responsable del tratamiento.</p></div>
+      <div class="right-item"><span class="right-name">Limitación</span><p class="right-desc">Solicitar la limitación del tratamiento de tus datos en determinados supuestos previstos por la normativa.</p></div>
+    </div>
+    <p class="text" style="margin-top:28px;">Para ejercer cualquiera de estos derechos, puedes contactarnos en <strong>info@silverandcare.com</strong>. Responderemos en un plazo máximo de <strong>30 días</strong> desde la recepción de tu solicitud.</p>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">06</span>
+    <h2 class="section-title">Servicios de <em>terceros.</em></h2>
+    <p class="text">El sitio web de Silver &amp; Care LLC puede utilizar los siguientes servicios de terceros que pueden recopilar datos de navegación:</p>
+    <ul class="legal-list">
+      <li><strong>Amazon</strong> — Al hacer clic en los botones de compra, el usuario es redirigido a Amazon USA, que cuenta con su propia política de privacidad independiente.</li>
+      <li><strong>WordPress</strong> — La plataforma sobre la que está construido el sitio web genera cookies técnicas necesarias para su funcionamiento.</li>
+      <li><strong>Redes sociales</strong> — Los enlaces a Instagram, Facebook y TikTok dirigen al usuario a plataformas externas con sus propias políticas de privacidad.</li>
+    </ul>
+    <p class="text">Silver &amp; Care LLC no es responsable de las prácticas de privacidad de estos servicios de terceros.</p>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">07</span>
+    <h2 class="section-title">Seguridad de <em>los datos.</em></h2>
+    <p class="text">Silver &amp; Care LLC aplica medidas técnicas y organizativas razonables para proteger los datos personales de los usuarios contra el acceso no autorizado, la pérdida, la destrucción o la divulgación accidental.</p>
+    <p class="text">Sin embargo, ninguna transmisión de datos por Internet puede garantizarse como completamente segura. Si el usuario tiene motivos para creer que su interacción con nosotros ya no es segura, puede notificarlo a través de <strong>info@silverandcare.com</strong>.</p>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">08</span>
+    <h2 class="section-title">Derechos CCPA para <em>residentes de California.</em></h2>
+    <p class="text">Si eres residente del Estado de California, USA, la California Consumer Privacy Act (CCPA) te otorga derechos adicionales sobre tus datos personales:</p>
+    <ul class="legal-list">
+      <li><strong>Derecho a saber</strong> — Puedes solicitar información sobre las categorías de datos personales que recopilamos y los fines para los que los usamos.</li>
+      <li><strong>Derecho a eliminar</strong> — Puedes solicitar la eliminación de los datos personales que hayamos recopilado sobre ti.</li>
+      <li><strong>Derecho a no ser discriminado</strong> — No recibirás un trato discriminatorio por ejercer tus derechos bajo la CCPA.</li>
+      <li><strong>No venta de datos</strong> — Silver &amp; Care LLC no vende datos personales de sus usuarios a terceros.</li>
+    </ul>
+    <p class="text">Para ejercer estos derechos, contáctanos en <strong>info@silverandcare.com</strong>.</p>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">09</span>
+    <h2 class="section-title">Actualizaciones de esta <em>política.</em></h2>
+    <p class="text">Silver &amp; Care LLC se reserva el derecho de modificar esta Política de Privacidad en cualquier momento para adaptarla a cambios legislativos, cambios en el sitio web o decisiones empresariales.</p>
+    <p class="text">Cualquier modificación será publicada en esta misma página con la fecha de actualización correspondiente. Te recomendamos revisar esta política periódicamente.</p>
+    <p class="text">El uso continuado del sitio web tras la publicación de cambios implica la aceptación de la nueva versión de la Política de Privacidad.</p>
+  </div>
+
+  <div class="legal-section reveal">
+    <span class="section-num">10</span>
+    <h2 class="section-title">Contacto y <em>reclamaciones.</em></h2>
+    <p class="text">Para cualquier consulta, solicitud o reclamación relacionada con el tratamiento de tus datos personales, puedes contactar con Silver &amp; Care LLC a través de:</p>
+    <div class="contact-box">
+      <span class="contact-box-name">Silver &amp; Care LLC</span>
+      <p class="contact-box-body">
+        <strong>Correo electrónico:</strong> info@silverandcare.com<br><br>
+        <strong>Domicilio:</strong> Henderson, Nevada, USA<br><br>
+        <strong>Horario de atención:</strong> Lunes a viernes, de 9:00 a 17:00 (PST)<br><br>
+        Silver &amp; Care LLC se compromete a responder cualquier solicitud relacionada con datos personales en un plazo máximo de <strong>30 días hábiles</strong> desde su recepción.
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <span class="footer-logo-ag">Ag+</span>
+      <span class="footer-logo-brand">Silver &amp; Care</span>
+      <p class="footer-tagline">Plata coloidal pura al 99.99% para el cuidado diario del cabello, las mascotas, el hogar y la ropa.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="#" class="social-btn" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Silver &amp; Care LLC. Todos los derechos reservados.</span>
+    <nav class="footer-legal">
+      <a href="politica-privacidad.html">Privacidad</a>
+      <a href="politica-cookies.html">Cookies</a>
+      <a href="aviso-legal.html">Aviso Legal</a>
+    </nav>
+  </div>
+</footer>
+<script>
+  (function() { var h=document.getElementById('main-header'); window.addEventListener('scroll',function(){h.classList.toggle('scrolled',window.scrollY>40);},{passive:true}); })();
+  document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('open');this.classList.toggle('open');});
+  document.querySelectorAll('.mobile-menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobile-menu').classList.remove('open');document.getElementById('hamburger').classList.remove('open');});});
+  (function(){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.07});document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});})();
+</script>
+</body>
+</html>

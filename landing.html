@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprar Silver &amp; Care en Amazon — Plata Coloidal 99.99%</title>
+  <meta name="description" content="Compra Silver &amp; Care en Amazon USA. Ag+ Hair, Ag+ Pets, Ag+ Home, Ag+ Cloth. Plata coloidal pura al 99.99%. Envío Prime. Compra segura." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Silver &amp; Care" />
+  <meta property="og:title" content="Comprar Silver &amp; Care — Plata Coloidal 99.99%" />
+  <meta property="og:description" content="4 líneas de cuidado premium con plata coloidal 99.99%. Disponible en Amazon USA con envío Prime." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/ag-hair.jpeg" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Silver &amp; Care" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Silver &amp; Care — Comprar en Amazon" />
+  <meta name="twitter:image" content="assets/ag-hair.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #FFFFFF; --offwhite: #F7F7F5; --stone: #EFEFED;
+      --silver: #C8CDD4; --silver-dark: #9AA0A6; --silver-light: #E2E5E9;
+      --charcoal: #2A2A2A; --black: #0A0A0A; --gray: #6B6B6B;
+      --border: rgba(200,205,212,0.2);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', Helvetica, sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); font-weight: 300; background: var(--white); color: var(--charcoal); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .d1{transition-delay:0.08s;}.d2{transition-delay:0.16s;}.d3{transition-delay:0.24s;}.d4{transition-delay:0.32s;}
+    .label { font-size: 9px; font-weight: 500; letter-spacing: 0.36em; text-transform: uppercase; color: var(--silver-dark); display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .label::before { content: ''; width: 24px; height: 1px; background: currentColor; flex-shrink: 0; }
+
+    /* HEADER */
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; height: 68px; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; background: rgba(10,10,10,0.92); border-bottom: 1px solid rgba(200,205,212,0.08); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); transition: all 0.4s; }
+    header.scrolled { background: rgba(10,10,10,0.98); border-bottom-color: rgba(200,205,212,0.15); }
+    .nav-logo { display: flex; align-items: baseline; }
+    .nav-logo-ag { font-family: var(--font-display); font-size: 21px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.02em; }
+    .nav-logo-brand { font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); margin-left: 12px; }
+    nav ul { display: flex; align-items: center; gap: 36px; list-style: none; }
+    nav ul a { font-size: 9px; letter-spacing: 0.26em; text-transform: uppercase; color: rgba(226,229,233,0.7); position: relative; transition: color 0.3s; padding-bottom: 2px; }
+    nav ul a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: var(--silver); transition: width 0.35s; }
+    nav ul a:hover { color: var(--white); } nav ul a:hover::after { width: 100%; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px; }
+    .hamburger span { display: block; width: 22px; height: 1px; background: var(--silver); transition: all 0.35s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .mobile-menu { position: fixed; top: 68px; left: 0; right: 0; background: rgba(8,8,8,0.98); border-bottom: 1px solid rgba(200,205,212,0.08); padding: 32px 40px; z-index: 9998; transform: translateY(-108%); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); backdrop-filter: blur(20px); }
+    .mobile-menu.open { transform: translateY(0); }
+    .mobile-menu a { display: block; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-light); padding: 16px 0; border-bottom: 1px solid rgba(200,205,212,0.06); transition: color 0.3s; }
+    .mobile-menu a:last-child { border-bottom: none; } .mobile-menu a:hover { color: var(--white); }
+
+    /* HERO */
+    .hero { min-height: 100vh; background: var(--black); display: flex; align-items: center; padding: 100px 80px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 70% at 85% 50%, rgba(200,205,212,0.1) 0%, transparent 60%), radial-gradient(ellipse 40% 50% at 5% 80%, rgba(200,205,212,0.05) 0%, transparent 55%); pointer-events: none; }
+    .hero-bg { position: absolute; font-family: var(--font-display); font-size: 300px; font-weight: 300; color: rgba(200,205,212,0.03); bottom: -40px; right: -20px; line-height: 1; pointer-events: none; }
+    .hero-content { position: relative; z-index: 2; max-width: 640px; }
+    .hero-eyebrow { font-size: 9px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 36px; display: flex; align-items: center; gap: 12px; }
+    .hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--silver-dark); }
+    .hero-title { font-family: var(--font-display); font-size: clamp(52px, 6vw, 96px); font-weight: 300; line-height: 0.92; letter-spacing: -0.03em; color: var(--silver-light); margin-bottom: 40px; }
+    .hero-title em { font-style: italic; color: var(--silver); }
+    .hero-sub { font-size: 15px; line-height: 1.9; color: rgba(154,160,166,0.85); max-width: 480px; margin-bottom: 48px; }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 52px; }
+    .hero-tag { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--silver-dark); border: 1px solid rgba(200,205,212,0.15); padding: 8px 16px; }
+    .btn-hero { display: inline-flex; align-items: center; gap: 12px; font-size: 11px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--black); background: var(--silver-light); padding: 18px 44px; cursor: pointer; transition: all 0.3s; border: none; }
+    .btn-hero:hover { background: var(--white); }
+    .btn-hero::after { content: '→'; }
+    .hero-orb { position: absolute; right: 8%; top: 50%; transform: translateY(-50%); width: 320px; height: 320px; }
+    .orb { position: absolute; border-radius: 50%; border: 1px solid rgba(200,205,212,0.1); animation: pulse 7s ease-in-out infinite; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .orb-1 { width: 320px; height: 320px; background: radial-gradient(circle at 35% 35%, rgba(200,205,212,0.08), transparent 65%); }
+    .orb-2 { width: 220px; height: 220px; animation-delay: 1.5s; animation-direction: reverse; }
+    .orb-3 { width: 130px; height: 130px; animation-delay: 0.75s; border-color: rgba(200,205,212,0.15); }
+    .orb-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; }
+    .orb-ag { font-family: var(--font-display); font-size: 80px; font-weight: 300; color: rgba(200,205,212,0.2); line-height: 1; display: block; }
+    .orb-sub { font-size: 8px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(154,160,166,0.3); display: block; margin-top: 6px; }
+    @keyframes pulse { 0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.7;} 50%{transform:translate(-50%,-50%) scale(1.05);opacity:1;} }
+
+    /* MARQUEE */
+    .marquee { background: #111; border-top: 1px solid rgba(200,205,212,0.06); border-bottom: 1px solid rgba(200,205,212,0.06); padding: 14px 0; overflow: hidden; }
+    .marquee-track { display: flex; animation: marquee 32s linear infinite; white-space: nowrap; }
+    .marquee-item { display: inline-flex; align-items: center; gap: 20px; padding: 0 28px; font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(154,160,166,0.55); flex-shrink: 0; }
+    .marquee-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(200,205,212,0.3); }
+    @keyframes marquee { from{transform:translateX(0);} to{transform:translateX(-50%);} }
+
+    /* PROBLEM */
+    .problem { padding: 140px 80px; background: var(--white); display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+    .problem-visual { background: var(--offwhite); border: 1px solid var(--border); padding: 48px; display: flex; flex-direction: column; gap: 20px; }
+    .compare-bad { }
+    .compare-label-bad { font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(154,160,166,0.4); margin-bottom: 16px; }
+    .compare-bar { height: 8px; background: rgba(200,205,212,0.15); margin-bottom: 8px; border-radius: 1px; }
+    .compare-bar:nth-child(2) { width: 80%; }
+    .compare-bar:nth-child(3) { width: 60%; }
+    .compare-bar:nth-child(4) { width: 90%; }
+    .compare-divider { height: 1px; background: var(--border); margin: 24px 0; }
+    .compare-good { display: flex; align-items: center; gap: 20px; }
+    .compare-ag { font-family: var(--font-display); font-size: 40px; font-weight: 300; color: var(--charcoal); }
+    .compare-good-text { }
+    .compare-label-good { font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--silver-dark); }
+    .compare-brand { font-size: 11px; font-weight: 400; color: var(--charcoal); margin-top: 4px; }
+    .problem-title { font-family: var(--font-display); font-size: clamp(38px, 4vw, 60px); font-weight: 300; color: var(--charcoal); line-height: 0.95; letter-spacing: -0.02em; margin-bottom: 32px; }
+    .problem-title em { font-style: italic; color: var(--silver-dark); }
+    .problem-copy { font-size: 15px; line-height: 1.9; color: var(--gray); margin-bottom: 18px; }
+    .problem-copy strong { font-weight: 500; color: var(--charcoal); }
+
+    /* ORIGIN */
+    .origin { padding: 140px 80px; background: var(--black); text-align: center; position: relative; overflow: hidden; }
+    .origin::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(200,205,212,0.06) 0%, transparent 70%); }
+    .origin-bg { position: absolute; font-family: var(--font-display); font-size: 260px; font-weight: 300; color: rgba(200,205,212,0.03); top: 50%; left: 50%; transform: translate(-50%,-50%); pointer-events: none; white-space: nowrap; }
+    .origin-inner { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; }
+    .origin-title { font-family: var(--font-display); font-size: clamp(40px, 5vw, 72px); font-weight: 300; color: var(--silver-light); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 32px; }
+    .origin-title em { font-style: italic; color: var(--silver); }
+    .origin-copy { font-size: 15px; line-height: 1.9; color: rgba(154,160,166,0.8); margin-bottom: 16px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .origin-copy strong { color: var(--silver-light); font-weight: 400; }
+
+    /* PROMISE */
+    .promise { padding: 140px 80px; background: var(--offwhite); }
+    .promise-header { margin-bottom: 72px; }
+    .promise-title { font-family: var(--font-display); font-size: clamp(40px, 4.5vw, 64px); font-weight: 300; color: var(--charcoal); line-height: 0.95; letter-spacing: -0.02em; }
+    .promise-title em { font-style: italic; color: var(--silver-dark); }
+    .promise-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+    .promise-col { padding: 48px 40px; background: var(--white); border: 1px solid rgba(200,205,212,0.1); transition: all 0.35s; position: relative; overflow: hidden; }
+    .promise-col::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--silver), transparent); transform: scaleX(0); transition: transform 0.4s; }
+    .promise-col:hover::before { transform: scaleX(1); }
+    .promise-col:hover { background: #fafafa; transform: translateY(-5px); box-shadow: 0 20px 48px rgba(0,0,0,0.06); }
+    .promise-num { font-family: var(--font-display); font-size: 52px; font-weight: 300; color: rgba(200,205,212,0.3); line-height: 1; display: block; margin-bottom: 24px; }
+    .promise-col-title { font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--charcoal); display: block; margin-bottom: 16px; }
+    .promise-col p { font-size: 14px; line-height: 1.85; color: var(--gray); }
+
+    /* PRODUCTS */
+    .products { padding: 140px 80px; background: var(--white); }
+    .products-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 72px; flex-wrap: wrap; gap: 24px; }
+    .products-title { font-family: var(--font-display); font-size: clamp(38px, 4vw, 58px); font-weight: 300; color: var(--charcoal); line-height: 1; }
+    .products-title em { font-style: italic; color: var(--silver-dark); }
+    .products-sub { font-size: 13px; color: var(--gray); max-width: 260px; line-height: 1.7; text-align: right; }
+    .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; }
+    .product-card { background: var(--offwhite); border: 1px solid rgba(200,205,212,0.1); padding: 44px 32px 36px; position: relative; overflow: hidden; transition: all 0.35s; cursor: pointer; }
+    .product-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--silver), transparent); transform: scaleX(0); transition: transform 0.4s; }
+    .product-card:hover::before { transform: scaleX(1); }
+    .product-card:hover { border-color: rgba(200,205,212,0.3); transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.07); background: var(--white); }
+    .product-ag-bg { position: absolute; top: 20px; right: 16px; font-family: var(--font-display); font-size: 72px; font-weight: 300; color: rgba(200,205,212,0.1); line-height: 1; pointer-events: none; transition: color 0.4s; }
+    .product-card:hover .product-ag-bg { color: rgba(200,205,212,0.2); }
+    .product-img-wrap { width: 100%; height: 180px; overflow: hidden; margin-bottom: 24px; background: #111; }
+    .product-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; filter: brightness(0.85) saturate(0.85); }
+    .product-card:hover .product-img-wrap img { transform: scale(1.05); }
+    .product-cat { font-size: 9px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 36px; display: flex; align-items: center; gap: 10px; }
+    .product-cat::before { content: ''; width: 20px; height: 1px; background: var(--silver); }
+    .product-name { font-family: var(--font-display); font-size: 28px; font-weight: 400; color: var(--charcoal); margin-bottom: 6px; }
+    .product-ppm { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 20px; }
+    .product-desc { font-size: 13px; line-height: 1.75; color: var(--gray); margin-bottom: 28px; }
+    .product-micro { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); border-top: 1px solid var(--border); padding-top: 20px; }
+
+    /* BENEFITS */
+    .benefits { padding: 120px 80px; background: var(--charcoal); }
+    .benefits-title { font-family: var(--font-display); font-size: clamp(36px, 3.5vw, 54px); font-weight: 300; color: var(--silver-light); margin-bottom: 72px; letter-spacing: -0.01em; }
+    .benefits-title em { font-style: italic; color: var(--silver); }
+    .benefits-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; }
+    .benefit-item { padding: 40px 28px; border: 1px solid rgba(200,205,212,0.1); background: rgba(255,255,255,0.02); transition: all 0.3s; }
+    .benefit-item:hover { background: rgba(200,205,212,0.05); border-color: rgba(200,205,212,0.2); }
+    .benefit-icon { width: 28px; height: 28px; border: 1px solid rgba(200,205,212,0.2); margin-bottom: 24px; display: flex; align-items: center; justify-content: center; }
+    .benefit-icon::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--silver); opacity: 0.5; }
+    .benefit-name { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--silver-light); margin-bottom: 12px; display: block; font-weight: 400; }
+    .benefit-desc { font-size: 12px; font-weight: 300; line-height: 1.75; color: var(--silver-dark); }
+
+    /* ASPIRACIONAL */
+    .aspirational { padding: 140px 80px; background: var(--white); display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+    .asp-quote { font-family: var(--font-display); font-size: clamp(34px, 3.5vw, 56px); font-weight: 300; line-height: 1.12; color: var(--charcoal); letter-spacing: -0.01em; position: relative; padding-left: 32px; }
+    .asp-quote::before { content: '"'; position: absolute; left: 0; top: -12px; font-family: var(--font-display); font-size: 80px; color: var(--silver); line-height: 1; opacity: 0.4; }
+    .asp-quote em { font-style: italic; color: var(--silver-dark); }
+    .asp-copy { font-size: 15px; line-height: 1.9; color: var(--gray); margin-bottom: 18px; }
+    .asp-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+    .asp-tag { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver-dark); border: 1px solid var(--border); padding: 8px 18px; background: var(--stone); }
+
+    /* TESTIMONIALS */
+    .testimonials { padding: 120px 80px; background: var(--stone); }
+    .testimonials-title { font-family: var(--font-display); font-size: clamp(34px, 3.5vw, 52px); font-weight: 300; color: var(--charcoal); margin-bottom: 64px; letter-spacing: -0.01em; }
+    .testimonials-title em { font-style: italic; color: var(--silver-dark); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+    .testimonial { background: var(--white); border: 1px solid rgba(200,205,212,0.1); padding: 48px 40px; position: relative; transition: all 0.3s; }
+    .testimonial:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.06); transform: translateY(-4px); }
+    .testimonial::before { content: '"'; font-family: var(--font-display); font-size: 72px; color: var(--silver); line-height: 0.8; display: block; margin-bottom: 20px; opacity: 0.4; }
+    .testimonial p { font-family: var(--font-display); font-size: 17px; font-weight: 300; font-style: italic; line-height: 1.65; color: var(--charcoal); margin-bottom: 28px; }
+    .testimonial-author { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-dark); display: flex; align-items: center; gap: 12px; }
+    .testimonial-author::before { content: ''; width: 24px; height: 1px; background: var(--silver); }
+
+    /* CTA + FORM */
+    .cta-section { padding: 140px 80px; background: #1a1a1a; text-align: center; position: relative; overflow: hidden; }
+    .cta-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(200,205,212,0.06) 0%, transparent 70%); }
+    .cta-inner { position: relative; z-index: 2; max-width: 640px; margin: 0 auto; }
+    .cta-title { font-family: var(--font-display); font-size: clamp(44px, 5vw, 76px); font-weight: 300; line-height: 1; color: var(--silver-light); margin-bottom: 24px; letter-spacing: -0.02em; }
+    .cta-title em { font-style: italic; color: var(--silver); }
+    .cta-sub { font-size: 15px; line-height: 1.85; color: rgba(154,160,166,0.75); margin-bottom: 56px; }
+    .form-box { background: #222; border: 1px solid rgba(200,205,212,0.12); padding: 52px; max-width: 500px; margin: 0 auto; text-align: left; }
+    .form-title { font-family: var(--font-display); font-size: 26px; font-weight: 300; color: var(--silver-light); margin-bottom: 8px; }
+    .form-desc { font-size: 13px; line-height: 1.75; color: rgba(154,160,166,0.6); margin-bottom: 36px; }
+    .form-group { margin-bottom: 20px; }
+    .form-label { font-size: 9px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(154,160,166,0.5); display: block; margin-bottom: 10px; }
+    .form-input, .form-select { width: 100%; padding: 14px 18px; background: rgba(255,255,255,0.04); border: 1px solid rgba(200,205,212,0.12); color: var(--silver-light); font-family: var(--font-body); font-size: 14px; font-weight: 300; transition: border-color 0.3s; outline: none; }
+    .form-input:focus, .form-select:focus { border-color: rgba(200,205,212,0.3); }
+    .form-select option { background: #222; color: var(--silver-light); }
+    .form-submit { width: 100%; padding: 18px; background: var(--silver-light); color: #1a1a1a; border: none; font-family: var(--font-body); font-size: 11px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; cursor: pointer; margin-top: 8px; transition: all 0.3s; }
+    .form-submit:hover { background: var(--white); }
+    .form-note { font-size: 10px; color: rgba(154,160,166,0.4); text-align: center; margin-top: 16px; letter-spacing: 0.08em; }
+    .cta-microcopy { display: flex; justify-content: center; gap: 28px; margin-top: 36px; flex-wrap: wrap; }
+    .micro-item { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(154,160,166,0.5); display: flex; align-items: center; gap: 8px; }
+    .micro-item::before { content: '✦'; font-size: 7px; color: var(--silver-dark); }
+
+    /* FOOTER */
+    footer { background: #0d0d0d; border-top: 1px solid rgba(200,205,212,0.06); padding: 56px 80px 32px; }
+    .footer-top { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 40px; border-bottom: 1px solid rgba(200,205,212,0.06); flex-wrap: wrap; gap: 24px; }
+    .footer-logo-ag { font-family: var(--font-display); font-size: 22px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.02em; display: block; }
+    .footer-logo-brand { font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); display: block; margin-bottom: 14px; }
+    .footer-tagline { font-size: 12px; color: rgba(154,160,166,0.4); max-width: 280px; line-height: 1.7; margin-bottom: 24px; }
+    .footer-social { display: flex; gap: 8px; }
+    .social-btn { width: 34px; height: 34px; border: 1px solid rgba(200,205,212,0.1); display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+    .social-btn:hover { border-color: rgba(200,205,212,0.3); background: rgba(200,205,212,0.05); }
+    .social-btn svg { width: 13px; height: 13px; fill: rgba(154,160,166,0.5); transition: fill 0.3s; }
+    .social-btn:hover svg { fill: var(--silver-light); }
+    .footer-nav { display: flex; flex-direction: column; gap: 12px; }
+    .footer-nav a { font-size: 12px; color: rgba(154,160,166,0.4); transition: color 0.3s; }
+    .footer-nav a:hover { color: var(--silver-light); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 28px; flex-wrap: wrap; gap: 16px; }
+    .footer-copy { font-size: 10px; color: rgba(154,160,166,0.25); letter-spacing: 0.08em; }
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(154,160,166,0.25); transition: color 0.3s; }
+    .footer-legal a:hover { color: var(--silver-dark); }
+
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+      header { padding: 0 32px; } nav ul { display: none; } .hamburger { display: flex; }
+      .hero { padding: 100px 40px 80px; } .hero-orb { display: none; }
+      .problem, .aspirational { grid-template-columns: 1fr; gap: 56px; padding: 100px 40px; }
+      .origin, .promise, .products, .benefits, .testimonials, .cta-section { padding-left: 40px; padding-right: 40px; }
+      .promise-grid { grid-template-columns: 1fr; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .benefits-grid { grid-template-columns: repeat(3, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      footer { padding: 48px 40px 28px; }
+    }
+    @media (max-width: 640px) {
+      header { padding: 0 24px; } .mobile-menu { padding: 28px 24px; }
+      .hero { padding: 80px 24px 60px; }
+      .problem, .origin, .promise, .products, .benefits, .testimonials, .aspirational, .cta-section { padding-left: 24px; padding-right: 24px; padding-top: 80px; padding-bottom: 80px; }
+      .products-grid { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+      .products-sub { text-align: left; }
+      .form-box { padding: 36px 28px; }
+      footer { padding: 40px 24px 24px; }
+      .footer-top { flex-direction: column; } .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<header id="main-header">
+  <a href="index.html" class="nav-logo"><span class="nav-logo-ag">Ag+</span><span class="nav-logo-brand">Silver &amp; Care</span></a>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul></nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="productos.html">Productos</a><a href="contacto.html">Contacto</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">Ag</div>
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal">Plata coloidal pura · 99.99%</div>
+    <h1 class="hero-title reveal d1">El poder de<br>la <em>plata</em> en tu<br>rutina diaria.</h1>
+    <p class="hero-sub reveal d2">Una línea premium de cuidado personal y del hogar formulada con plata coloidal pura al 99.99%. Minimalismo, pureza y sofisticación en cada aplicación.</p>
+    <div class="hero-tags reveal d3">
+      <span class="hero-tag">Plata coloidal 99.99%</span>
+      <span class="hero-tag">Fórmulas especializadas</span>
+      <span class="hero-tag">Diseño minimalista</span>
+      <span class="hero-tag">Uso diario premium</span>
+    </div>
+    <a href="#cta" class="btn-hero reveal d4">Comprar en Amazon</a>
+  </div>
+  <div class="hero-orb">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb-text">
+      <span class="orb-ag">Ag</span>
+      <span class="orb-sub">Silver · 47</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">El poder de la plata<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Pureza reinventada<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Lujo cotidiano<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Ag+ Hair<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Ag+ Pets<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Ag+ Home<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Ag+ Cloth<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Menos artificio. Más pureza.<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Plata coloidal 99.99%<span class="marquee-dot"></span></span>
+    <span class="marquee-item">El poder de la plata<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Pureza reinventada<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Lujo cotidiano<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Ag+ Hair<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Ag+ Pets<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Ag+ Home<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Ag+ Cloth<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Menos artificio. Más pureza.<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Plata coloidal 99.99%<span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="problem-visual reveal">
+    <div class="compare-bad">
+      <div class="compare-label-bad">El mercado</div>
+      <div class="compare-bar"></div>
+      <div class="compare-bar"></div>
+      <div class="compare-bar"></div>
+    </div>
+    <div class="compare-divider"></div>
+    <div class="compare-good">
+      <div class="compare-ag">Ag+</div>
+      <div class="compare-good-text">
+        <div class="compare-label-good">Premium</div>
+        <div class="compare-brand">Silver &amp; Care</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="label reveal">El Problema</div>
+    <h2 class="problem-title reveal d1">Demasiados<br>productos.<br><em>Muy poca<br>diferencia.</em></h2>
+    <p class="problem-copy reveal d2">El mercado está saturado de fórmulas artificiales, ingredientes agresivos y marcas que prometen lo mismo.</p>
+    <p class="problem-copy reveal d2">Envases vacíos. Ingredientes genéricos. Experiencias olvidables.</p>
+    <p class="problem-copy reveal d3">La mayoría de productos de cuidado diario fueron diseñados para vender volumen. <strong>No para elevar tu rutina.</strong></p>
+  </div>
+</section>
+
+<!-- ORIGIN -->
+<section class="origin">
+  <div class="origin-bg">Ag</div>
+  <div class="origin-inner">
+    <div class="label reveal" style="justify-content:center; color:var(--silver-dark);">El Diferenciador</div>
+    <h2 class="origin-title reveal d1">Durante siglos,<br>la plata fue símbolo<br>de <em>pureza y protección.</em></h2>
+    <p class="origin-copy reveal d2">Civilizaciones antiguas utilizaron la plata por su valor excepcional y su asociación con la conservación y el cuidado.</p>
+    <p class="origin-copy reveal d3">Hoy, Silver &amp; Care toma ese legado y lo transforma en productos modernos para el día a día. <strong>No como un ingrediente secundario. Como protagonista.</strong></p>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="promise">
+  <div class="promise-header reveal">
+    <div class="label">La Promesa</div>
+    <h2 class="promise-title">Cuidado diario<br>elevado a una<br><em>experiencia premium.</em></h2>
+  </div>
+  <div class="promise-grid">
+    <div class="promise-col reveal">
+      <span class="promise-num">01</span>
+      <span class="promise-col-title">Cabello</span>
+      <p>Fórmulas diseñadas para una sensación de limpieza sofisticada y cuidado superior en tu rutina diaria.</p>
+    </div>
+    <div class="promise-col reveal d1">
+      <span class="promise-num">02</span>
+      <span class="promise-col-title">Hogar</span>
+      <p>Una nueva generación de productos elegantes para los espacios donde vives y que reflejan quién eres.</p>
+    </div>
+    <div class="promise-col reveal d2">
+      <span class="promise-num">03</span>
+      <span class="promise-col-title">Mascotas &amp; Textiles</span>
+      <p>Cuidado delicado con una estética y calidad que normalmente solo existe en marcas de lujo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <div class="products-header reveal">
+    <h2 class="products-title">Una línea completa.<br><em>Una filosofía.</em></h2>
+    <p class="products-sub">Cuatro líneas especializadas. Una sola materia prima. La pureza de la plata.</p>
+  </div>
+  <div class="products-grid">
+    <div class="product-card reveal">
+      <div class="product-ag-bg">Ag+</div>
+      <div class="product-img-wrap"><img src="assets/ag-hair.jpeg" alt="Ag+ Hair" loading="lazy" /></div>
+      <div class="product-cat">Hair Care</div>
+      <h3 class="product-name">Ag+ Hair</h3>
+      <div class="product-ppm">10–15 PPM Colloidal Silver</div>
+      <p class="product-desc">Cuidado moderno del cabello inspirado en la pureza de la plata. Un mist ligero para la rutina diaria de cabello y cuero cabelludo.</p>
+      <div class="product-micro">Plata coloidal pura 99.99%</div>
+    </div>
+    <div class="product-card reveal d1">
+      <div class="product-ag-bg">Ag+</div>
+      <div class="product-img-wrap"><img src="assets/ag-pets.jpeg" alt="Ag+ Pets" loading="lazy" /></div>
+      <div class="product-cat">Pet Care</div>
+      <h3 class="product-name">Ag+ Pets</h3>
+      <div class="product-ppm">15–20 PPM Colloidal Silver</div>
+      <p class="product-desc">Cuidado suave y elegante para tus mascotas. Una solución diseñada para la higiene externa y la frescura diaria.</p>
+      <div class="product-micro">Plata coloidal pura 99.99%</div>
+    </div>
+    <div class="product-card reveal d2">
+      <div class="product-ag-bg">Ag+</div>
+      <div class="product-img-wrap"><img src="assets/ag-home.jpeg" alt="Ag+ Home" loading="lazy" /></div>
+      <div class="product-cat">Home Care</div>
+      <h3 class="product-name">Ag+ Home</h3>
+      <div class="product-ppm">40–50 PPM Colloidal Silver</div>
+      <p class="product-desc">Soluciones modernas para tu hogar. Una nueva generación de cuidado de superficies con la elegancia que tu espacio merece.</p>
+      <div class="product-micro">Plata coloidal pura 99.99%</div>
+    </div>
+    <div class="product-card reveal d3">
+      <div class="product-ag-bg">Ag+</div>
+      <div class="product-img-wrap"><img src="assets/ag-cloth.jpeg" alt="Ag+ Cloth" loading="lazy" /></div>
+      <div class="product-cat">Laundry Care</div>
+      <h3 class="product-name">Ag+ Cloth</h3>
+      <div class="product-ppm">15–20 PPM Colloidal Silver</div>
+      <p class="product-desc">Frescura premium para tus textiles. Diseñado para añadir directamente a la lavadora, cuidando tus telas con distinción.</p>
+      <div class="product-micro">Plata coloidal pura 99.99%</div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <div class="label reveal" style="color:var(--silver-dark);">Lo Que Nos Define</div>
+  <h2 class="benefits-title reveal d1">Menos artificio.<br><em>Más pureza.</em></h2>
+  <div class="benefits-grid">
+    <div class="benefit-item reveal"><div class="benefit-icon"></div><span class="benefit-name">Fórmulas especializadas</span><p class="benefit-desc">Concentraciones de PPM diseñadas para cada aplicación específica.</p></div>
+    <div class="benefit-item reveal d1"><div class="benefit-icon"></div><span class="benefit-name">Diseño premium</span><p class="benefit-desc">Presentación minimalista pensada para integrarse en tu espacio con elegancia.</p></div>
+    <div class="benefit-item reveal d2"><div class="benefit-icon"></div><span class="benefit-name">Pureza de la plata</span><p class="benefit-desc">Plata coloidal 99.99% pura como ingrediente protagonista, no secundario.</p></div>
+    <div class="benefit-item reveal d3"><div class="benefit-icon"></div><span class="benefit-name">Uso diario</span><p class="benefit-desc">Formulados para integrarse naturalmente en la rutina de cada día.</p></div>
+    <div class="benefit-item reveal d4"><div class="benefit-icon"></div><span class="benefit-name">Elegancia funcional</span><p class="benefit-desc">El lujo moderno no es exceso — es pureza, diseño y elección consciente.</p></div>
+  </div>
+</section>
+
+<!-- ASPIRACIONAL -->
+<section class="aspirational">
+  <div class="reveal">
+    <p class="asp-quote">No es solo cuidado personal. Es una nueva <em>estética de vida.</em></p>
+  </div>
+  <div>
+    <div class="label reveal">Nuestra Filosofía</div>
+    <p class="asp-copy reveal d1">Silver &amp; Care transforma objetos cotidianos en experiencias premium. Porque el lujo moderno ya no se trata de excesos.</p>
+    <p class="asp-copy reveal d2">Se trata de pureza, diseño y elección consciente. Productos que dejas visibles con orgullo.</p>
+    <div class="asp-tags reveal d3">
+      <span class="asp-tag">Minimalismo funcional</span>
+      <span class="asp-tag">Pureza reinventada</span>
+      <span class="asp-tag">Lujo cotidiano</span>
+      <span class="asp-tag">Elegancia en cada detalle</span>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="label reveal">Testimonios</div>
+  <h2 class="testimonials-title reveal d1">Diseñado para quienes<br><em>valoran los detalles.</em></h2>
+  <div class="testimonials-grid">
+    <div class="testimonial reveal"><p>No parece un producto más. Se siente distinto desde el primer uso.</p><div class="testimonial-author">Cliente verificado</div></div>
+    <div class="testimonial reveal d1"><p>Minimalista, elegante y sorprendentemente premium.</p><div class="testimonial-author">Cliente verificado</div></div>
+    <div class="testimonial reveal d2"><p>La primera marca de cuidado diario que dejo visible en mi casa.</p><div class="testimonial-author">Cliente verificado</div></div>
+  </div>
+</section>
+
+<!-- CTA + FORM -->
+<section class="cta-section" id="cta">
+  <div class="cta-inner">
+    <div class="label reveal" style="justify-content:center; color:var(--silver-dark);">Disponible en Amazon</div>
+    <h2 class="cta-title reveal d1">Haz de la plata<br>parte de tu <em>rutina.</em></h2>
+    <p class="cta-sub reveal d2">Descubre la línea Silver &amp; Care y transforma tu manera de cuidar tu cuerpo, tu hogar y lo que más importa.</p>
+    <div class="form-box reveal d3">
+      <div class="form-title">Comprar ahora</div>
+      <p class="form-desc">Selecciona tu producto y te redirigimos directamente a Amazon para completar tu pedido con envío rápido y compra segura.</p>
+      <div class="form-group">
+        <label class="form-label" for="sc-nombre">Tu nombre</label>
+        <input class="form-input" type="text" id="sc-nombre" placeholder="Nombre" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="sc-email">Email</label>
+        <input class="form-input" type="email" id="sc-email" placeholder="correo@ejemplo.com" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="sc-producto">Producto de interés</label>
+        <select class="form-select" id="sc-producto">
+          <option value="">Selecciona un producto</option>
+          <option value="hair">Ag+ Hair — Cuidado capilar</option>
+          <option value="pets">Ag+ Pets — Cuidado de mascotas</option>
+          <option value="home">Ag+ Home — Cuidado del hogar</option>
+          <option value="cloth">Ag+ Cloth — Cuidado de textiles</option>
+          <option value="all">Ver todos los productos</option>
+        </select>
+      </div>
+      <button class="form-submit" onclick="handleForm()">Comprar en Amazon →</button>
+      <p class="form-note">Envío rápido · Compra segura · Experiencia premium</p>
+    </div>
+    <div class="cta-microcopy reveal d4">
+      <span class="micro-item">Compra segura</span>
+      <span class="micro-item">Envío Prime</span>
+      <span class="micro-item">Devolución garantizada</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <span class="footer-logo-ag">Ag+</span>
+      <span class="footer-logo-brand">Silver &amp; Care</span>
+      <p class="footer-tagline">Plata coloidal pura al 99.99% para el cuidado diario del cabello, las mascotas, el hogar y la ropa.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="#" class="social-btn" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Silver &amp; Care LLC. Todos los derechos reservados.</span>
+    <nav class="footer-legal">
+      <a href="politica-privacidad.html">Privacidad</a>
+      <a href="politica-cookies.html">Cookies</a>
+      <a href="aviso-legal.html">Aviso Legal</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function(){var h=document.getElementById('main-header');window.addEventListener('scroll',function(){h.classList.toggle('scrolled',window.scrollY>40);},{passive:true});})();
+  document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('open');this.classList.toggle('open');});
+  document.querySelectorAll('.mobile-menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobile-menu').classList.remove('open');document.getElementById('hamburger').classList.remove('open');});});
+  function handleForm() {
+    var nombre = document.getElementById('sc-nombre').value.trim();
+    var email = document.getElementById('sc-email').value.trim();
+    var producto = document.getElementById('sc-producto').value;
+    if (!nombre || !email || !producto) { alert('Por favor completa todos los campos.'); return; }
+    var links = { hair:'https://www.amazon.com', pets:'https://www.amazon.com', home:'https://www.amazon.com', cloth:'https://www.amazon.com', all:'https://www.amazon.com' };
+    window.open(links[producto] || 'https://www.amazon.com', '_blank');
+  }
+  (function(){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.07});document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});})();
+</script>
+</body>
+</html>
