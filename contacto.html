@@ -7,58 +7,17 @@
   <meta name="description" content="Contacta con Silver &amp; Care: info@silverandcare.com. Henderson, Nevada, USA. Atención Lunes a Viernes 9:00-17:00 PST. Plata coloidal 99.99%." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Silver &amp; Care" />
-  <link rel="canonical" href="<!-- REVISAR: URL final /contacto -->" />
-
-  <!-- Open Graph -->
+  <link rel="canonical" href="<!-- REVISAR -->" />
   <meta property="og:title" content="Contacto | Silver &amp; Care" />
-  <meta property="og:description" content="Contacta con Silver &amp; Care: info@silverandcare.com. Henderson, Nevada USA. Lunes a Viernes 9:00-17:00 PST." />
+  <meta property="og:description" content="Contacta con Silver &amp; Care. info@silverandcare.com · Henderson, Nevada USA." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="<!-- REVISAR: URL final /contacto -->" />
-  <meta property="og:image" content="logo.jpg.jpeg" />
+  <meta property="og:image" content="assets/ag-hair.jpeg" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Silver &amp; Care" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contacto | Silver &amp; Care" />
-  <meta name="twitter:description" content="Contacta con Silver &amp; Care. info@silverandcare.com · Henderson, Nevada USA." />
-  <meta name="twitter:image" content="logo.jpg.jpeg" />
-
-  <!-- Schema BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "index.html"},
-      {"@type": "ListItem", "position": 2, "name": "Contacto", "item": "contacto.html"}
-    ]
-  }
-  </script>
-
-  <!-- Schema ContactPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contacto — Silver & Care",
-    "description": "Página de contacto de Silver & Care. Plata coloidal 99.99% para cuidado personal y del hogar.",
-    "url": "<!-- REVISAR -->",
-    "mainEntity": {
-      "@type": "LocalBusiness",
-      "name": "Silver & Care LLC",
-      "email": "info@silverandcare.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Henderson",
-        "addressRegion": "Nevada",
-        "addressCountry": "US"
-      },
-      "openingHours": "Mo-Fr 09:00-17:00"
-    }
-  }
-  </script>
-
+  <meta name="twitter:image" content="assets/ag-hair.jpeg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contacto — Silver & Care","mainEntity":{"@type":"LocalBusiness","name":"Silver & Care LLC","email":"info@silverandcare.com","address":{"@type":"PostalAddress","addressLocality":"Henderson","addressRegion":"Nevada","addressCountry":"US"},"openingHours":"Mo-Fr 09:00-17:00"}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
@@ -67,8 +26,8 @@
     :root {
       --white: #FFFFFF; --offwhite: #F7F7F5; --stone: #EFEFED;
       --silver: #C8CDD4; --silver-dark: #9AA0A6; --silver-light: #E2E5E9;
-      --charcoal: #2A2A2A; --black: #0A0A0A; --gray: #777777;
-      --border: rgba(200,205,212,0.3);
+      --charcoal: #2A2A2A; --black: #0A0A0A; --gray: #6B6B6B;
+      --border: rgba(200,205,212,0.2);
       --font-display: 'Playfair Display', Georgia, serif;
       --font-body: 'DM Sans', Helvetica, sans-serif;
     }
@@ -76,152 +35,153 @@
     body { font-family: var(--font-body); font-weight: 300; background: var(--white); color: var(--charcoal); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
     img { max-width: 100%; display: block; }
     a { text-decoration: none; color: inherit; }
-
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s ease, transform 0.9s ease; }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
     .reveal.visible { opacity: 1; transform: translateY(0); }
-    .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; } .d3 { transition-delay: 0.3s; }
-
-    .btn-dark { display: inline-block; font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--white); background: var(--black); padding: 16px 40px; border: 1px solid transparent; cursor: pointer; transition: all 0.3s; }
-    .btn-dark:hover { background: transparent; color: var(--black); border-color: var(--black); }
+    .d1 { transition-delay: 0.08s; } .d2 { transition-delay: 0.16s; } .d3 { transition-delay: 0.24s; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; padding: 15px 36px; cursor: pointer; transition: all 0.3s; border: none; }
+    .btn-dark { color: var(--white); background: var(--charcoal); }
+    .btn-dark:hover { background: var(--black); }
 
     /* HEADER */
-    header { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 60px; background: rgba(10,10,10,0.97); border-bottom: 1px solid rgba(200,205,212,0.12); transition: background 0.4s, backdrop-filter 0.4s; }
-    header.scrolled { background: rgba(10,10,10,0.99); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-    .nav-logo { display: flex; align-items: center; gap: 10px; }
-    .nav-logo img { height: 36px; width: auto; object-fit: contain; }
-    .nav-logo-ag { font-family: var(--font-display); font-size: 20px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.01em; }
-    .nav-logo-brand { font-size: 9px; font-weight: 300; letter-spacing: 0.3em; text-transform: uppercase; color: var(--silver-dark); margin-left: 10px; }
-    nav ul { display: flex; align-items: center; gap: 40px; list-style: none; }
-    nav ul a { font-size: 10px; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-light); position: relative; transition: color 0.3s; }
-    nav ul a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--silver); transition: width 0.3s; }
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; height: 68px; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; background: rgba(10,10,10,0.92); border-bottom: 1px solid rgba(200,205,212,0.08); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); transition: all 0.4s; }
+    header.scrolled { background: rgba(10,10,10,0.98); border-bottom-color: rgba(200,205,212,0.15); }
+    .nav-logo { display: flex; align-items: baseline; }
+    .nav-logo-ag { font-family: var(--font-display); font-size: 21px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.02em; }
+    .nav-logo-brand { font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); margin-left: 12px; }
+    nav ul { display: flex; align-items: center; gap: 36px; list-style: none; }
+    nav ul a { font-size: 9px; letter-spacing: 0.26em; text-transform: uppercase; color: rgba(226,229,233,0.7); position: relative; transition: color 0.3s; padding-bottom: 2px; }
+    nav ul a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: var(--silver); transition: width 0.35s; }
     nav ul a:hover, nav ul a.active { color: var(--white); }
     nav ul a:hover::after, nav ul a.active::after { width: 100%; }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-    .hamburger span { display: block; width: 24px; height: 1px; background: var(--silver); transition: all 0.3s; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px; }
+    .hamburger span { display: block; width: 22px; height: 1px; background: var(--silver); transition: all 0.35s cubic-bezier(0.16,1,0.3,1); }
     .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity: 0; }
     .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-    .mobile-menu { position: fixed; top: 72px; left: 0; right: 0; background: rgba(10,10,10,0.98); border-bottom: 1px solid rgba(200,205,212,0.1); padding: 28px 40px; z-index: 9998; transform: translateY(-110%); transition: transform 0.4s; backdrop-filter: blur(12px); }
+    .mobile-menu { position: fixed; top: 68px; left: 0; right: 0; background: rgba(8,8,8,0.98); border-bottom: 1px solid rgba(200,205,212,0.08); padding: 32px 40px; z-index: 9998; transform: translateY(-108%); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); backdrop-filter: blur(20px); }
     .mobile-menu.open { transform: translateY(0); }
-    .mobile-menu a { display: block; font-size: 12px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: var(--silver-light); padding: 14px 0; border-bottom: 1px solid rgba(200,205,212,0.08); transition: color 0.3s; }
+    .mobile-menu a { display: block; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-light); padding: 16px 0; border-bottom: 1px solid rgba(200,205,212,0.06); transition: color 0.3s; }
     .mobile-menu a:last-child { border-bottom: none; }
     .mobile-menu a:hover { color: var(--white); }
 
-    /* HERO */
-    .page-hero { min-height: 55vh; background: var(--black); display: flex; align-items: center; padding: 120px 80px 100px; position: relative; overflow: hidden; }
-    .page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 60% at 15% 50%, rgba(200,205,212,0.08) 0%, transparent 60%); pointer-events: none; }
-    .page-hero-inner { position: relative; z-index: 2; max-width: 680px; }
-    .page-hero-eyebrow { font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 28px; display: flex; align-items: center; gap: 14px; }
-    .page-hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--silver); }
-    .page-hero-title { font-family: var(--font-display); font-size: clamp(44px, 6vw, 84px); font-weight: 300; line-height: 0.95; color: var(--silver-light); margin-bottom: 24px; }
+    /* PAGE HERO — SPLIT WITH IMAGE */
+    .page-hero { min-height: 65vh; display: grid; grid-template-columns: 1fr 1fr; background: var(--black); padding-top: 68px; overflow: hidden; }
+    .page-hero-left { display: flex; flex-direction: column; justify-content: flex-end; padding: 80px 80px 80px; position: relative; }
+    .page-hero-left::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 70% at 0% 70%, rgba(200,205,212,0.07), transparent 60%); pointer-events: none; }
+    .page-hero-eyebrow { font-size: 9px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 32px; display: flex; align-items: center; gap: 12px; position: relative; z-index: 2; }
+    .page-hero-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--silver-dark); }
+    .page-hero-title { font-family: var(--font-display); font-size: clamp(52px, 5.5vw, 86px); font-weight: 300; line-height: 0.92; color: var(--silver-light); margin-bottom: 28px; letter-spacing: -0.02em; position: relative; z-index: 2; }
     .page-hero-title em { font-style: italic; color: var(--silver); }
-    .page-hero-sub { font-size: 15px; line-height: 1.85; color: var(--silver-dark); max-width: 460px; }
+    .page-hero-sub { font-size: 14px; line-height: 1.9; color: rgba(154,160,166,0.8); max-width: 440px; position: relative; z-index: 2; }
+    .page-hero-right { position: relative; overflow: hidden; }
+    .page-hero-right img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6) saturate(0.7); }
+    .page-hero-right-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,10,10,0.7) 0%, transparent 50%); }
 
-    /* CONTACT MAIN */
-    .contact-main { padding: 100px 80px; background: var(--white); display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    /* CONTACT BODY */
+    .contact-body { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); }
 
     /* LEFT — INFO */
-    .contact-info { display: flex; flex-direction: column; gap: 48px; }
-    .contact-block { border-bottom: 1px solid var(--border); padding-bottom: 40px; }
-    .contact-block:last-child { border-bottom: none; padding-bottom: 0; }
-    .contact-block-label { font-size: 9px; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .contact-info { padding: 100px 80px; border-right: 1px solid rgba(200,205,212,0.1); }
+    .contact-info-title { font-family: var(--font-display); font-size: clamp(28px, 2.5vw, 40px); font-weight: 300; color: var(--charcoal); margin-bottom: 64px; line-height: 1.1; }
+    .contact-info-title em { font-style: italic; color: var(--silver-dark); }
+    .contact-block { padding-bottom: 44px; margin-bottom: 44px; border-bottom: 1px solid rgba(200,205,212,0.1); }
+    .contact-block:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+    .contact-block-label { font-size: 9px; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
     .contact-block-label::before { content: ''; width: 16px; height: 1px; background: var(--silver); }
-    .contact-value { font-family: var(--font-display); font-size: clamp(18px, 2vw, 26px); font-weight: 300; color: var(--charcoal); line-height: 1.3; margin-bottom: 8px; transition: color 0.3s; display: block; }
-    .contact-value:hover { color: var(--silver-dark); }
-    .contact-note { font-size: 12px; color: var(--gray); letter-spacing: 0.06em; line-height: 1.6; }
-
-    /* SOCIAL */
-    .social-grid { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
-    .social-item { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; background: var(--stone); border: 1px solid var(--border); transition: all 0.3s; cursor: pointer; }
-    .social-item:hover { background: var(--white); border-color: var(--silver); transform: translateX(4px); }
+    .contact-value { font-family: var(--font-display); font-size: clamp(20px, 2vw, 28px); font-weight: 300; color: var(--charcoal); line-height: 1.3; margin-bottom: 8px; display: block; transition: color 0.3s; }
+    a.contact-value:hover { color: var(--silver-dark); }
+    .contact-note { font-size: 12px; color: var(--gray); letter-spacing: 0.04em; line-height: 1.7; }
+    .social-grid { display: flex; flex-direction: column; gap: 2px; margin-top: 10px; }
+    .social-item { display: flex; align-items: center; justify-content: space-between; padding: 18px 22px; background: var(--offwhite); border: 1px solid rgba(200,205,212,0.1); transition: all 0.3s; }
+    .social-item:hover { background: var(--white); border-color: rgba(200,205,212,0.3); transform: translateX(5px); box-shadow: 0 4px 16px rgba(0,0,0,0.05); }
     .social-item-left { display: flex; align-items: center; gap: 16px; }
-    .social-icon { width: 36px; height: 36px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .social-icon { width: 36px; height: 36px; border: 1px solid rgba(200,205,212,0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: var(--white); }
     .social-icon svg { width: 14px; height: 14px; fill: var(--silver-dark); }
-    .social-name { font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--charcoal); }
-    .social-handle { font-size: 11px; color: var(--gray); }
+    .social-name { font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--charcoal); }
+    .social-handle { font-size: 11px; color: var(--gray); margin-top: 2px; }
     .social-arrow { font-size: 14px; color: var(--silver-dark); transition: transform 0.3s; }
     .social-item:hover .social-arrow { transform: translateX(4px); }
 
     /* RIGHT — COMPANY CARD */
-    .contact-card { background: var(--black); padding: 60px 52px; position: sticky; top: 100px; }
-    .contact-card-logo-wrap { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
-    .contact-card-logo-img { height: 48px; width: auto; object-fit: contain; }
-    .contact-card-logo { font-family: var(--font-display); font-size: 28px; font-weight: 400; color: var(--silver-light); display: block; }
-    .contact-card-brand { font-size: 10px; font-weight: 300; letter-spacing: 0.3em; text-transform: uppercase; color: var(--silver-dark); display: block; margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid rgba(200,205,212,0.1); }
-    .contact-card-item { margin-bottom: 28px; }
-    .contact-card-item:last-of-type { margin-bottom: 0; }
-    .contact-card-item-label { font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(154,160,166,0.5); margin-bottom: 6px; display: block; }
-    .contact-card-item-value { font-size: 14px; font-weight: 300; color: var(--silver-dark); line-height: 1.5; }
-    .contact-card-divider { height: 1px; background: rgba(200,205,212,0.08); margin: 32px 0; }
-    .contact-card-note { font-size: 11px; line-height: 1.8; color: rgba(154,160,166,0.4); }
+    .contact-card-wrap { padding: 100px 80px; background: var(--offwhite); display: flex; flex-direction: column; gap: 0; }
+    .contact-card { background: var(--black); padding: 56px 52px; position: sticky; top: 88px; }
+    .contact-card-ag { font-family: var(--font-display); font-size: 48px; font-weight: 300; color: rgba(200,205,212,0.2); line-height: 1; display: block; margin-bottom: 8px; }
+    .contact-card-name { font-family: var(--font-display); font-size: 22px; font-weight: 400; color: var(--silver-light); display: block; margin-bottom: 4px; }
+    .contact-card-brand { font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); display: block; margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(200,205,212,0.08); }
+    .contact-card-row { display: flex; flex-direction: column; gap: 4px; margin-bottom: 28px; }
+    .contact-card-row:last-of-type { margin-bottom: 0; }
+    .contact-card-row-label { font-size: 8px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(154,160,166,0.4); }
+    .contact-card-row-value { font-size: 14px; font-weight: 300; color: var(--silver-dark); line-height: 1.5; }
+    .contact-card-divider { height: 1px; background: rgba(200,205,212,0.07); margin: 32px 0; }
+    .contact-card-note { font-size: 11px; line-height: 1.85; color: rgba(154,160,166,0.35); }
 
-    /* AMAZON SECTION */
-    .amazon-section { padding: 80px; background: var(--offwhite); border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
-    .amazon-text h2 { font-family: var(--font-display); font-size: clamp(24px, 2.5vw, 36px); font-weight: 300; color: var(--charcoal); margin-bottom: 12px; line-height: 1.1; }
-    .amazon-text h2 em { font-style: italic; color: var(--silver-dark); }
-    .amazon-text p { font-size: 14px; line-height: 1.8; color: var(--gray); max-width: 420px; }
+    /* AMAZON STRIP */
+    .amazon-strip { background: var(--black); padding: 80px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 60px; border-top: 1px solid rgba(200,205,212,0.06); }
+    .amazon-strip-title { font-family: var(--font-display); font-size: clamp(28px, 3vw, 44px); font-weight: 300; color: var(--silver-light); line-height: 1.05; margin-bottom: 12px; }
+    .amazon-strip-title em { font-style: italic; color: var(--silver); }
+    .amazon-strip-sub { font-size: 14px; line-height: 1.8; color: rgba(154,160,166,0.7); max-width: 440px; }
+    .btn-light { color: var(--black); background: var(--silver-light); }
+    .btn-light:hover { background: var(--white); }
 
     /* FOOTER */
-    footer { background: #111111; border-top: 1px solid rgba(200,205,212,0.08); font-family: var(--font-body); padding: 48px 80px 28px; }
-    .footer-top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 36px; border-bottom: 1px solid rgba(200,205,212,0.08); flex-wrap: wrap; gap: 24px; }
-    .footer-brand { display: flex; flex-direction: column; gap: 10px; }
-    .footer-logo { display: flex; align-items: center; gap: 10px; }
-    .footer-logo img { height: 32px; width: auto; object-fit: contain; }
-    .footer-logo-ag { font-family: var(--font-display); font-size: 20px; font-weight: 400; color: var(--silver-light); }
-    .footer-logo-brand { font-size: 9px; font-weight: 300; letter-spacing: 0.3em; text-transform: uppercase; color: var(--silver-dark); margin-left: 10px; }
-    .footer-tagline { font-size: 12px; font-weight: 300; color: rgba(154,160,166,0.6); max-width: 320px; line-height: 1.7; }
-    .footer-social { display: flex; align-items: center; gap: 10px; }
-    .f-social-btn { width: 36px; height: 36px; border: 1px solid rgba(200,205,212,0.15); display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
-    .f-social-btn:hover { border-color: rgba(200,205,212,0.4); background: rgba(200,205,212,0.06); }
-    .f-social-btn svg { width: 14px; height: 14px; fill: var(--silver-dark); transition: fill 0.3s; }
-    .f-social-btn:hover svg { fill: var(--silver-light); }
-    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 24px; flex-wrap: wrap; gap: 16px; }
-    .footer-copy { font-size: 10px; font-weight: 300; color: rgba(154,160,166,0.4); letter-spacing: 0.08em; }
-    .footer-legal { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
-    .footer-legal a { font-size: 10px; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(154,160,166,0.4); transition: color 0.3s; }
+    footer { background: #0d0d0d; border-top: 1px solid rgba(200,205,212,0.06); padding: 56px 80px 32px; }
+    .footer-top { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 40px; border-bottom: 1px solid rgba(200,205,212,0.06); flex-wrap: wrap; gap: 24px; }
+    .footer-logo-ag { font-family: var(--font-display); font-size: 22px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.02em; display: block; }
+    .footer-logo-brand { font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 16px; display: block; }
+    .footer-tagline { font-size: 12px; color: rgba(154,160,166,0.4); max-width: 280px; line-height: 1.7; margin-bottom: 24px; }
+    .footer-social { display: flex; gap: 8px; }
+    .social-btn { width: 34px; height: 34px; border: 1px solid rgba(200,205,212,0.1); display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+    .social-btn:hover { border-color: rgba(200,205,212,0.3); background: rgba(200,205,212,0.05); }
+    .social-btn svg { width: 13px; height: 13px; fill: rgba(154,160,166,0.5); transition: fill 0.3s; }
+    .social-btn:hover svg { fill: var(--silver-light); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 28px; flex-wrap: wrap; gap: 16px; }
+    .footer-copy { font-size: 10px; color: rgba(154,160,166,0.25); letter-spacing: 0.08em; }
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(154,160,166,0.25); transition: color 0.3s; }
     .footer-legal a:hover { color: var(--silver-dark); }
 
     /* RESPONSIVE */
-    @media (max-width: 1024px) {
+    @media (max-width: 1100px) {
       header { padding: 0 32px; }
       nav ul { display: none; }
       .hamburger { display: flex; }
-      .page-hero, .contact-main, .amazon-section { padding-left: 40px; padding-right: 40px; }
-      .contact-main { grid-template-columns: 1fr; gap: 56px; }
+      .page-hero { grid-template-columns: 1fr; }
+      .page-hero-right { height: 40vh; }
+      .page-hero-left { padding: 72px 40px 60px; }
+      .contact-body { grid-template-columns: 1fr; }
+      .contact-info { padding: 72px 40px; border-right: none; border-bottom: 1px solid rgba(200,205,212,0.1); }
+      .contact-card-wrap { padding: 72px 40px; }
       .contact-card { position: static; }
-      footer { padding: 40px 40px 24px; }
+      .amazon-strip { padding: 60px 40px; grid-template-columns: 1fr; gap: 32px; }
+      footer { padding: 48px 40px 28px; }
     }
     @media (max-width: 640px) {
       header { padding: 0 24px; }
-      .mobile-menu { padding: 24px; }
-      .page-hero { padding: 80px 24px 60px; min-height: auto; }
-      .contact-main, .amazon-section { padding-left: 24px; padding-right: 24px; }
+      .mobile-menu { padding: 28px 24px; }
+      .page-hero-left { padding: 56px 24px 48px; }
+      .contact-info { padding: 56px 24px; }
+      .contact-card-wrap { padding: 56px 24px; }
       .contact-card { padding: 40px 28px; }
-      .amazon-section { flex-direction: column; align-items: flex-start; }
-      footer { padding: 36px 24px 20px; }
-      .footer-top { flex-direction: column; align-items: flex-start; gap: 28px; }
-      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 14px; }
+      .amazon-strip { padding: 56px 24px; }
+      footer { padding: 40px 24px 24px; }
+      .footer-top { flex-direction: column; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header id="main-header">
   <a href="index.html" class="nav-logo">
     <span class="nav-logo-ag">Ag+</span>
     <span class="nav-logo-brand">Silver &amp; Care</span>
   </a>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="contacto.html" class="active">Contacto</a></li>
-    </ul>
-  </nav>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="contacto.html" class="active">Contacto</a></li>
+  </ul></nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </header>
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
@@ -229,35 +189,41 @@
   <a href="contacto.html">Contacto</a>
 </div>
 
-<!-- HERO -->
 <section class="page-hero">
-  <div class="page-hero-inner">
+  <div class="page-hero-left">
     <div class="page-hero-eyebrow reveal">Silver &amp; Care · Contacto</div>
     <h1 class="page-hero-title reveal d1">Hablemos.</h1>
     <p class="page-hero-sub reveal d2">Estamos aquí para responder cualquier pregunta sobre nuestros productos, pedidos o la marca Silver &amp; Care.</p>
   </div>
+  <div class="page-hero-right">
+    <img src="assets/ag-hair.jpeg" alt="Silver &amp; Care — Contacto" loading="lazy" />
+    <div class="page-hero-right-overlay"></div>
+  </div>
 </section>
 
-<!-- CONTACT MAIN -->
-<section class="contact-main">
-  <!-- LEFT -->
+<div class="contact-body">
   <div class="contact-info">
-    <div class="contact-block reveal">
+    <h2 class="contact-info-title reveal">Información de <em>contacto.</em></h2>
+
+    <div class="contact-block reveal d1">
       <div class="contact-block-label">Correo electrónico</div>
       <a href="mailto:info@silverandcare.com" class="contact-value">info@silverandcare.com</a>
       <p class="contact-note">Respondemos en un plazo máximo de 2 días hábiles.</p>
     </div>
-    <div class="contact-block reveal d1">
+
+    <div class="contact-block reveal d2">
       <div class="contact-block-label">Ubicación</div>
       <div class="contact-value">Henderson, Nevada</div>
       <p class="contact-note">United States of America · Silver &amp; Care LLC</p>
     </div>
-    <div class="contact-block reveal d2">
+
+    <div class="contact-block reveal d3">
       <div class="contact-block-label">Horario de atención</div>
       <div class="contact-value">Lunes a Viernes</div>
       <p class="contact-note">9:00 — 17:00 · Hora del Pacífico (PST)</p>
     </div>
-    <div class="contact-block reveal d3">
+
+    <div class="contact-block reveal">
       <div class="contact-block-label">Redes sociales</div>
       <div class="social-grid">
         <a href="#" class="social-item" target="_blank" rel="noopener">
@@ -285,72 +251,71 @@
     </div>
   </div>
 
-  <!-- RIGHT — COMPANY CARD -->
-  <div class="contact-card reveal d1">
-    <span class="contact-card-logo">Ag+</span>
-    <span class="contact-card-brand">Silver &amp; Care</span>
-    <div class="contact-card-item">
-      <span class="contact-card-item-label">Razón social</span>
-      <span class="contact-card-item-value">Silver &amp; Care LLC</span>
+  <div class="contact-card-wrap">
+    <div class="contact-card reveal d1">
+      <span class="contact-card-ag">Ag+</span>
+      <span class="contact-card-name">Silver &amp; Care</span>
+      <span class="contact-card-brand">Colloidal Silver · Henderson, Nevada</span>
+      <div class="contact-card-row">
+        <span class="contact-card-row-label">Razón social</span>
+        <span class="contact-card-row-value">Silver &amp; Care LLC</span>
+      </div>
+      <div class="contact-card-row">
+        <span class="contact-card-row-label">Estado</span>
+        <span class="contact-card-row-value">Henderson, Nevada · USA</span>
+      </div>
+      <div class="contact-card-row">
+        <span class="contact-card-row-label">Correo</span>
+        <span class="contact-card-row-value">info@silverandcare.com</span>
+      </div>
+      <div class="contact-card-row">
+        <span class="contact-card-row-label">Horario</span>
+        <span class="contact-card-row-value">Lun — Vie · 9:00 a 17:00 PST</span>
+      </div>
+      <div class="contact-card-divider"></div>
+      <p class="contact-card-note">Para consultas sobre pedidos en Amazon, te recomendamos contactar directamente con el servicio al cliente de Amazon, ya que todas nuestras ventas se procesan a través de su plataforma.</p>
     </div>
-    <div class="contact-card-item">
-      <span class="contact-card-item-label">Estado</span>
-      <span class="contact-card-item-value">Henderson, Nevada · USA</span>
-    </div>
-    <div class="contact-card-item">
-      <span class="contact-card-item-label">Correo</span>
-      <span class="contact-card-item-value">info@silverandcare.com</span>
-    </div>
-    <div class="contact-card-item">
-      <span class="contact-card-item-label">Horario</span>
-      <span class="contact-card-item-value">Lun — Vie · 9:00 a 17:00 PST</span>
-    </div>
-    <div class="contact-card-divider"></div>
-    <p class="contact-card-note">Para consultas sobre pedidos en Amazon, te recomendamos contactar directamente con el servicio al cliente de Amazon, ya que todas nuestras ventas se procesan a través de su plataforma.</p>
   </div>
-</section>
-
-<!-- AMAZON SECTION -->
-<div class="amazon-section reveal">
-  <div class="amazon-text">
-    <h2>Compra directamente <em>en Amazon.</em></h2>
-    <p>Todos nuestros productos están disponibles en Amazon USA con envío Prime, compra segura y devolución garantizada.</p>
-  </div>
-  <a href="productos.html" class="btn-dark">Ver productos en Amazon</a>
 </div>
 
-<!-- FOOTER -->
+<div class="amazon-strip reveal">
+  <div>
+    <h2 class="amazon-strip-title">Compra directamente <em>en Amazon.</em></h2>
+    <p class="amazon-strip-sub">Todos nuestros productos están disponibles en Amazon USA con envío Prime, compra segura y devolución garantizada.</p>
+  </div>
+  <a href="productos.html" class="btn btn-light">Ver productos</a>
+</div>
+
 <footer>
   <div class="footer-top">
-    <div class="footer-brand">
-      <div class="footer-logo">
-        <span class="footer-logo-ag">Ag+</span>
-        <span class="footer-logo-brand">Silver &amp; Care</span>
-      </div>
+    <div>
+      <span class="footer-logo-ag">Ag+</span>
+      <span class="footer-logo-brand">Silver &amp; Care</span>
       <p class="footer-tagline">Plata coloidal pura al 99.99% para el cuidado diario del cabello, las mascotas, el hogar y la ropa.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="#" class="social-btn" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg></a>
+      </div>
     </div>
-    <div class="footer-social">
-      <a href="#" class="f-social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-      <a href="#" class="f-social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-      <a href="#" class="f-social-btn" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg></a>
-    </div>
+    <nav style="display:flex;flex-direction:column;gap:12px;">
+      <a href="index.html" style="font-size:12px;color:rgba(154,160,166,0.45);transition:color 0.3s;" onmouseover="this.style.color='var(--silver-light)'" onmouseout="this.style.color='rgba(154,160,166,0.45)'">Home</a>
+      <a href="productos.html" style="font-size:12px;color:rgba(154,160,166,0.45);transition:color 0.3s;" onmouseover="this.style.color='var(--silver-light)'" onmouseout="this.style.color='rgba(154,160,166,0.45)'">Productos</a>
+      <a href="contacto.html" style="font-size:12px;color:rgba(154,160,166,0.45);transition:color 0.3s;" onmouseover="this.style.color='var(--silver-light)'" onmouseout="this.style.color='rgba(154,160,166,0.45)'">Contacto</a>
+    </nav>
   </div>
   <div class="footer-bottom">
-    <span class="footer-copy">© 2026 Silver &amp; Care. Todos los derechos reservados.</span>
+    <span class="footer-copy">© 2026 Silver &amp; Care LLC. Todos los derechos reservados.</span>
     <nav class="footer-legal">
-      <a href="#">Política de Privacidad</a>
-      <a href="#">Política de Cookies</a>
-      <a href="#">Aviso Legal</a>
+      <a href="#">Privacidad</a><a href="#">Cookies</a><a href="#">Aviso Legal</a>
     </nav>
   </div>
 </footer>
 
 <script>
   (function() {
-    var header = document.getElementById('main-header');
-    function onScroll() { header.classList.toggle('scrolled', window.scrollY > 30); }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    var h = document.getElementById('main-header');
+    window.addEventListener('scroll', function() { h.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
   })();
   document.getElementById('hamburger').addEventListener('click', function() {
     document.getElementById('mobile-menu').classList.toggle('open');
@@ -363,13 +328,10 @@
     });
   });
   (function() {
-    var els = document.querySelectorAll('.reveal');
     var obs = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
-      });
-    }, { threshold: 0.08 });
-    els.forEach(function(el) { obs.observe(el); });
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
   })();
 </script>
 </body>

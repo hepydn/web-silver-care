@@ -7,50 +7,18 @@
   <meta name="description" content="4 productos con plata coloidal 99.99%: Ag+ Hair (10-15ppm), Ag+ Pets (15-20ppm), Ag+ Home (40-50ppm), Ag+ Cloth (15-20ppm). Compra en Amazon USA." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Silver &amp; Care" />
-  <link rel="canonical" href="<!-- REVISAR: URL final /productos -->" />
-
-  <!-- Open Graph -->
+  <link rel="canonical" href="<!-- REVISAR -->" />
   <meta property="og:title" content="Productos de Plata Coloidal | Silver &amp; Care" />
-  <meta property="og:description" content="4 líneas de cuidado con plata coloidal 99.99%: cabello, mascotas, hogar y ropa. Disponibles en Amazon USA con envío Prime." />
+  <meta property="og:description" content="4 líneas de cuidado con plata coloidal 99.99%: Hair, Pets, Home y Cloth. Amazon USA." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="<!-- REVISAR: URL final /productos -->" />
-  <meta property="og:image" content="logo.jpg.jpeg" />
+  <meta property="og:image" content="assets/ag-hair.jpeg" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Silver &amp; Care" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Productos de Plata Coloidal | Silver &amp; Care" />
-  <meta name="twitter:description" content="4 líneas de cuidado con plata coloidal 99.99%: Ag+ Hair, Pets, Home, Cloth. Compra en Amazon USA." />
-  <meta name="twitter:image" content="logo.jpg.jpeg" />
-
-  <!-- Schema BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "index.html"},
-      {"@type": "ListItem", "position": 2, "name": "Productos", "item": "productos.html"}
-    ]
-  }
-  </script>
-
-  <!-- Schema ItemList productos -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Colección Silver & Care — Plata Coloidal",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Ag+ Hair — Cuidado Capilar 10-15 PPM"},
-      {"@type": "ListItem", "position": 2, "name": "Ag+ Pets — Cuidado de Mascotas 15-20 PPM"},
-      {"@type": "ListItem", "position": 3, "name": "Ag+ Home — Cuidado del Hogar 40-50 PPM"},
-      {"@type": "ListItem", "position": 4, "name": "Ag+ Cloth — Ropa y Textiles 15-20 PPM"}
-    ]
-  }
-  </script>
-
+  <meta name="twitter:title" content="Productos | Silver &amp; Care" />
+  <meta name="twitter:image" content="assets/ag-hair.jpeg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"index.html"},{"@type":"ListItem","position":2,"name":"Productos","item":"productos.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Colección Silver & Care","itemListElement":[{"@type":"ListItem","position":1,"name":"Ag+ Hair — 10-15 PPM"},{"@type":"ListItem","position":2,"name":"Ag+ Pets — 15-20 PPM"},{"@type":"ListItem","position":3,"name":"Ag+ Home — 40-50 PPM"},{"@type":"ListItem","position":4,"name":"Ag+ Cloth — 15-20 PPM"}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
@@ -59,8 +27,8 @@
     :root {
       --white: #FFFFFF; --offwhite: #F7F7F5; --stone: #EFEFED;
       --silver: #C8CDD4; --silver-dark: #9AA0A6; --silver-light: #E2E5E9;
-      --charcoal: #2A2A2A; --black: #0A0A0A; --gray: #777777;
-      --border: rgba(200,205,212,0.3);
+      --charcoal: #2A2A2A; --black: #0A0A0A; --gray: #6B6B6B;
+      --border: rgba(200,205,212,0.2);
       --font-display: 'Playfair Display', Georgia, serif;
       --font-body: 'DM Sans', Helvetica, sans-serif;
     }
@@ -68,156 +36,149 @@
     body { font-family: var(--font-body); font-weight: 300; background: var(--white); color: var(--charcoal); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
     img { max-width: 100%; display: block; }
     a { text-decoration: none; color: inherit; }
-
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s ease, transform 0.9s ease; }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
     .reveal.visible { opacity: 1; transform: translateY(0); }
-    .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; } .d3 { transition-delay: 0.3s; }
-
-    .label { font-size: 10px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
-    .label::before { content: ''; width: 28px; height: 1px; background: var(--silver); }
-
-    .btn-dark { display: inline-block; font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--white); background: var(--black); padding: 16px 40px; border: 1px solid transparent; cursor: pointer; transition: all 0.3s; }
-    .btn-dark:hover { background: transparent; color: var(--black); border-color: var(--black); }
-    .btn-outline-dark { display: inline-block; font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-light); background: transparent; padding: 16px 40px; border: 1px solid rgba(200,205,212,0.3); cursor: pointer; transition: all 0.3s; }
-    .btn-outline-dark:hover { background: rgba(200,205,212,0.1); border-color: var(--silver); }
+    .d1 { transition-delay: 0.08s; } .d2 { transition-delay: 0.16s; } .d3 { transition-delay: 0.24s; }
+    .label { font-size: 9px; font-weight: 500; letter-spacing: 0.36em; text-transform: uppercase; color: var(--silver-dark); display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .label::before { content: ''; width: 24px; height: 1px; background: currentColor; flex-shrink: 0; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; padding: 15px 36px; cursor: pointer; transition: all 0.3s ease; border: none; }
+    .btn-dark { color: var(--white); background: var(--charcoal); }
+    .btn-dark:hover { background: var(--black); }
+    .btn-ghost-dark { color: var(--silver-light); background: transparent; border: 1px solid rgba(200,205,212,0.2); }
+    .btn-ghost-dark:hover { border-color: var(--silver); background: rgba(200,205,212,0.06); }
 
     /* HEADER */
-    header { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 60px; background: rgba(10,10,10,0.97); border-bottom: 1px solid rgba(200,205,212,0.12); transition: background 0.4s, backdrop-filter 0.4s; }
-    header.scrolled { background: rgba(10,10,10,0.99); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-    .nav-logo { display: flex; align-items: center; gap: 10px; }
-    .nav-logo img { height: 36px; width: auto; object-fit: contain; }
-    .nav-logo-ag { font-family: var(--font-display); font-size: 20px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.01em; }
-    .nav-logo-brand { font-size: 9px; font-weight: 300; letter-spacing: 0.3em; text-transform: uppercase; color: var(--silver-dark); margin-left: 10px; }
-    nav ul { display: flex; align-items: center; gap: 40px; list-style: none; }
-    nav ul a { font-size: 10px; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-light); position: relative; transition: color 0.3s; }
-    nav ul a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--silver); transition: width 0.3s; }
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; height: 68px; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; background: rgba(10,10,10,0.92); border-bottom: 1px solid rgba(200,205,212,0.08); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); transition: all 0.4s; }
+    header.scrolled { background: rgba(10,10,10,0.98); border-bottom-color: rgba(200,205,212,0.15); }
+    .nav-logo { display: flex; align-items: baseline; gap: 0; }
+    .nav-logo-ag { font-family: var(--font-display); font-size: 21px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.02em; }
+    .nav-logo-brand { font-size: 9px; font-weight: 300; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); margin-left: 12px; }
+    nav ul { display: flex; align-items: center; gap: 36px; list-style: none; }
+    nav ul a { font-size: 9px; font-weight: 400; letter-spacing: 0.26em; text-transform: uppercase; color: rgba(226,229,233,0.7); position: relative; transition: color 0.3s; padding-bottom: 2px; }
+    nav ul a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: var(--silver); transition: width 0.35s; }
     nav ul a:hover, nav ul a.active { color: var(--white); }
     nav ul a:hover::after, nav ul a.active::after { width: 100%; }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-    .hamburger span { display: block; width: 24px; height: 1px; background: var(--silver); transition: all 0.3s; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px; }
+    .hamburger span { display: block; width: 22px; height: 1px; background: var(--silver); transition: all 0.35s cubic-bezier(0.16,1,0.3,1); }
     .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity: 0; }
     .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-    .mobile-menu { position: fixed; top: 72px; left: 0; right: 0; background: rgba(10,10,10,0.98); border-bottom: 1px solid rgba(200,205,212,0.1); padding: 28px 40px; z-index: 9998; transform: translateY(-110%); transition: transform 0.4s; backdrop-filter: blur(12px); }
+    .mobile-menu { position: fixed; top: 68px; left: 0; right: 0; background: rgba(8,8,8,0.98); border-bottom: 1px solid rgba(200,205,212,0.08); padding: 32px 40px; z-index: 9998; transform: translateY(-108%); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); backdrop-filter: blur(20px); }
     .mobile-menu.open { transform: translateY(0); }
-    .mobile-menu a { display: block; font-size: 12px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: var(--silver-light); padding: 14px 0; border-bottom: 1px solid rgba(200,205,212,0.08); transition: color 0.3s; }
+    .mobile-menu a { display: block; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-light); padding: 16px 0; border-bottom: 1px solid rgba(200,205,212,0.06); transition: color 0.3s; }
     .mobile-menu a:last-child { border-bottom: none; }
     .mobile-menu a:hover { color: var(--white); }
 
-    /* HERO */
-    .page-hero { min-height: 55vh; background: var(--black); display: flex; align-items: center; padding: 120px 80px 80px; position: relative; overflow: hidden; }
-    .page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 60% at 15% 50%, rgba(200,205,212,0.08) 0%, transparent 60%); pointer-events: none; }
-    .page-hero-inner { position: relative; z-index: 2; max-width: 680px; }
-    .page-hero-eyebrow { font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 28px; display: flex; align-items: center; gap: 14px; }
-    .page-hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--silver); }
-    .page-hero-title { font-family: var(--font-display); font-size: clamp(44px, 6vw, 84px); font-weight: 300; line-height: 0.95; color: var(--silver-light); margin-bottom: 24px; }
+    /* PAGE HERO */
+    .page-hero { min-height: 60vh; background: var(--black); display: flex; align-items: flex-end; padding: 68px 0 0; position: relative; overflow: hidden; }
+    .page-hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 80% 50%, rgba(200,205,212,0.07) 0%, transparent 60%); pointer-events: none; }
+    .page-hero-content { position: relative; z-index: 2; padding: 80px 80px 72px; max-width: 820px; }
+    .page-hero-eyebrow { font-size: 9px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 32px; display: flex; align-items: center; gap: 12px; }
+    .page-hero-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--silver-dark); }
+    .page-hero-title { font-family: var(--font-display); font-size: clamp(48px, 6vw, 90px); font-weight: 300; line-height: 0.93; color: var(--silver-light); margin-bottom: 28px; letter-spacing: -0.02em; }
     .page-hero-title em { font-style: italic; color: var(--silver); }
-    .page-hero-sub { font-size: 15px; line-height: 1.85; color: var(--silver-dark); max-width: 500px; }
+    .page-hero-sub { font-size: 14px; line-height: 1.9; color: rgba(154,160,166,0.8); max-width: 520px; }
 
-    /* FILTER BAR */
-    .filter-bar { background: var(--offwhite); border-bottom: 1px solid var(--border); padding: 20px 80px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-    .filter-btn { font-size: 10px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: var(--silver-dark); background: none; border: 1px solid var(--border); padding: 10px 24px; cursor: pointer; transition: all 0.3s; }
-    .filter-btn:hover, .filter-btn.active { background: var(--black); color: var(--silver-light); border-color: var(--black); }
+    /* PRODUCT TABS */
+    .product-tabs { background: var(--black); border-top: 1px solid rgba(200,205,212,0.06); display: flex; overflow-x: auto; scrollbar-width: none; }
+    .product-tabs::-webkit-scrollbar { display: none; }
+    .product-tab { flex: 1; min-width: 120px; padding: 20px 32px; font-size: 9px; letter-spacing: 0.26em; text-transform: uppercase; color: rgba(154,160,166,0.5); border: none; background: none; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.3s; white-space: nowrap; font-family: var(--font-body); }
+    .product-tab:hover { color: var(--silver-light); }
+    .product-tab.active { color: var(--silver-light); border-bottom-color: var(--silver); }
 
-    /* PRODUCTS SECTION */
-    .products-section { padding: 100px 80px; background: var(--offwhite); }
-
-    /* PRODUCT ROW — alternating layout */
-    .product-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-bottom: 4px; background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.3s; }
-    .product-row:hover { box-shadow: 0 12px 48px rgba(0,0,0,0.07); }
-    .product-row.reverse { direction: rtl; }
-    .product-row.reverse > * { direction: ltr; }
-    .product-row-img { overflow: hidden; height: 480px; background: #1a1a1a; }
-    .product-row-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
-    .product-row:hover .product-row-img img { transform: scale(1.03); }
-    .product-row-body { padding: 64px 60px; display: flex; flex-direction: column; justify-content: center; }
-    .product-row-cat { font-size: 9px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--silver-dark); display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+    /* PRODUCT ROWS */
+    .products-list { background: var(--offwhite); }
+    .product-row { display: grid; grid-template-columns: 1fr 1fr; min-height: 580px; border-bottom: 1px solid rgba(200,205,212,0.1); overflow: hidden; transition: background 0.3s; }
+    .product-row:last-child { border-bottom: none; }
+    .product-row-img { position: relative; overflow: hidden; background: #111; }
+    .product-row-img img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.82) contrast(1.05) saturate(0.85); transition: transform 0.8s cubic-bezier(0.16,1,0.3,1), filter 0.5s; }
+    .product-row:hover .product-row-img img { transform: scale(1.04); filter: brightness(0.9) contrast(1.05) saturate(0.9); }
+    .product-row-body { padding: 72px 80px; display: flex; flex-direction: column; justify-content: center; background: var(--white); transition: background 0.3s; }
+    .product-row:hover .product-row-body { background: #fafafa; }
+    .product-row-num { font-family: var(--font-display); font-size: 80px; font-weight: 300; color: rgba(200,205,212,0.15); line-height: 1; display: block; margin-bottom: -20px; }
+    .product-row-cat { font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--silver-dark); display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
     .product-row-cat::before { content: ''; width: 20px; height: 1px; background: var(--silver); }
-    .product-row-name { font-family: var(--font-display); font-size: clamp(42px, 4vw, 64px); font-weight: 300; color: var(--charcoal); margin-bottom: 8px; line-height: 1; }
-    .product-row-ppm { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
-    .product-row-desc { font-size: 15px; line-height: 1.85; color: var(--gray); margin-bottom: 20px; }
-    .product-row-detail { font-size: 13px; line-height: 1.8; color: var(--gray); margin-bottom: 40px; }
-    .product-row-btns { display: flex; gap: 12px; flex-wrap: wrap; }
-    .product-tag { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--silver-dark); background: var(--stone); border: 1px solid var(--border); padding: 6px 14px; display: inline-block; margin-bottom: 24px; }
+    .product-row-name { font-family: var(--font-display); font-size: clamp(48px, 5vw, 72px); font-weight: 300; color: var(--charcoal); line-height: 1; margin-bottom: 12px; letter-spacing: -0.02em; }
+    .product-row-ppm { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--silver-dark); margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .product-row-tag { display: inline-block; font-size: 8px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--silver-dark); background: var(--stone); border: 1px solid var(--border); padding: 7px 16px; margin-bottom: 24px; }
+    .product-row-desc { font-size: 15px; line-height: 1.9; color: var(--gray); margin-bottom: 16px; }
+    .product-row-detail { font-size: 13px; line-height: 1.85; color: rgba(107,107,107,0.8); margin-bottom: 44px; }
+    .product-row-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+    .product-row.alt .product-row-img { order: 2; }
+    .product-row.alt .product-row-body { order: 1; }
 
-    /* INGREDIENTS STRIP */
-    .ingredients-strip { background: var(--black); padding: 60px 80px; display: flex; align-items: center; gap: 60px; flex-wrap: wrap; }
-    .ingredients-title { font-family: var(--font-display); font-size: 13px; font-weight: 300; color: var(--silver-dark); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap; }
-    .ingredients-list { display: flex; gap: 4px; flex-wrap: wrap; flex: 1; }
-    .ingredient-tag { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver-dark); border: 1px solid rgba(200,205,212,0.15); padding: 8px 16px; }
+    /* INGREDIENTS */
+    .ingredients { background: var(--black); padding: 56px 80px; display: flex; align-items: center; gap: 48px; flex-wrap: wrap; border-top: 1px solid rgba(200,205,212,0.06); }
+    .ingredients-label { font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(154,160,166,0.4); white-space: nowrap; }
+    .ingredients-tags { display: flex; gap: 3px; flex-wrap: wrap; flex: 1; }
+    .ingredient-tag { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(154,160,166,0.5); border: 1px solid rgba(200,205,212,0.1); padding: 9px 18px; transition: all 0.3s; }
+    .ingredient-tag:hover { color: var(--silver-light); border-color: rgba(200,205,212,0.25); }
 
-    /* AMAZON SECTION */
-    .amazon-section { padding: 80px; background: var(--stone); border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
-    .amazon-text h2 { font-family: var(--font-display); font-size: clamp(28px, 3vw, 44px); font-weight: 300; color: var(--charcoal); margin-bottom: 12px; line-height: 1.1; }
-    .amazon-text h2 em { font-style: italic; color: var(--silver-dark); }
-    .amazon-text p { font-size: 14px; line-height: 1.8; color: var(--gray); max-width: 440px; }
+    /* AMAZON CTA */
+    .amazon-cta { padding: 100px 80px; background: var(--offwhite); display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 60px; border-top: 1px solid rgba(200,205,212,0.1); }
+    .amazon-cta-title { font-family: var(--font-display); font-size: clamp(32px, 3vw, 48px); font-weight: 300; color: var(--charcoal); line-height: 1.05; margin-bottom: 12px; }
+    .amazon-cta-title em { font-style: italic; color: var(--silver-dark); }
+    .amazon-cta-sub { font-size: 14px; line-height: 1.8; color: var(--gray); max-width: 460px; }
 
     /* FOOTER */
-    footer { background: #111111; border-top: 1px solid rgba(200,205,212,0.08); font-family: var(--font-body); padding: 48px 80px 28px; }
-    .footer-top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 36px; border-bottom: 1px solid rgba(200,205,212,0.08); flex-wrap: wrap; gap: 24px; }
-    .footer-brand { display: flex; flex-direction: column; gap: 10px; }
-    .footer-logo { display: flex; align-items: center; gap: 10px; }
-    .footer-logo img { height: 32px; width: auto; object-fit: contain; }
-    .footer-logo-ag { font-family: var(--font-display); font-size: 20px; font-weight: 400; color: var(--silver-light); }
-    .footer-logo-brand { font-size: 9px; font-weight: 300; letter-spacing: 0.3em; text-transform: uppercase; color: var(--silver-dark); margin-left: 10px; }
-    .footer-tagline { font-size: 12px; font-weight: 300; color: rgba(154,160,166,0.6); max-width: 320px; line-height: 1.7; }
-    .footer-social { display: flex; align-items: center; gap: 10px; }
-    .social-btn { width: 36px; height: 36px; border: 1px solid rgba(200,205,212,0.15); display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
-    .social-btn:hover { border-color: rgba(200,205,212,0.4); background: rgba(200,205,212,0.06); }
-    .social-btn svg { width: 14px; height: 14px; fill: var(--silver-dark); transition: fill 0.3s; }
+    footer { background: #0d0d0d; border-top: 1px solid rgba(200,205,212,0.06); padding: 56px 80px 32px; }
+    .footer-top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 40px; border-bottom: 1px solid rgba(200,205,212,0.06); flex-wrap: wrap; gap: 24px; }
+    .footer-logo-ag { font-family: var(--font-display); font-size: 22px; font-weight: 400; color: var(--silver-light); letter-spacing: -0.02em; }
+    .footer-logo-brand { font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--silver-dark); margin-left: 12px; }
+    .footer-tagline { font-size: 12px; font-weight: 300; color: rgba(154,160,166,0.4); max-width: 300px; line-height: 1.7; margin-top: 10px; }
+    .footer-social { display: flex; gap: 8px; }
+    .social-btn { width: 34px; height: 34px; border: 1px solid rgba(200,205,212,0.1); display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+    .social-btn:hover { border-color: rgba(200,205,212,0.3); background: rgba(200,205,212,0.05); }
+    .social-btn svg { width: 13px; height: 13px; fill: rgba(154,160,166,0.5); transition: fill 0.3s; }
     .social-btn:hover svg { fill: var(--silver-light); }
-    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 24px; flex-wrap: wrap; gap: 16px; }
-    .footer-copy { font-size: 10px; font-weight: 300; color: rgba(154,160,166,0.4); letter-spacing: 0.08em; }
-    .footer-legal { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
-    .footer-legal a { font-size: 10px; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(154,160,166,0.4); transition: color 0.3s; }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 28px; flex-wrap: wrap; gap: 16px; }
+    .footer-copy { font-size: 10px; color: rgba(154,160,166,0.25); letter-spacing: 0.08em; }
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(154,160,166,0.25); transition: color 0.3s; }
     .footer-legal a:hover { color: var(--silver-dark); }
 
     /* RESPONSIVE */
-    @media (max-width: 1024px) {
+    @media (max-width: 1100px) {
       header { padding: 0 32px; }
       nav ul { display: none; }
       .hamburger { display: flex; }
-      .page-hero, .products-section, .ingredients-strip, .amazon-section { padding-left: 40px; padding-right: 40px; }
-      .filter-bar { padding-left: 40px; padding-right: 40px; }
-      .product-row { grid-template-columns: 1fr; }
-      .product-row.reverse { direction: ltr; }
-      .product-row-img { height: 320px; }
-      .product-row-body { padding: 40px; }
-      footer { padding: 40px 40px 24px; }
+      .page-hero-content { padding: 60px 40px 56px; }
+      .product-row { grid-template-columns: 1fr; min-height: auto; }
+      .product-row-img { height: 360px; }
+      .product-row-body { padding: 52px 40px; }
+      .product-row.alt .product-row-img { order: 0; }
+      .product-row.alt .product-row-body { order: 0; }
+      .ingredients, .amazon-cta { padding-left: 40px; padding-right: 40px; }
+      .amazon-cta { grid-template-columns: 1fr; gap: 32px; }
+      footer { padding: 48px 40px 28px; }
     }
     @media (max-width: 640px) {
       header { padding: 0 24px; }
-      .mobile-menu { padding: 24px; }
-      .page-hero { padding: 80px 24px 60px; min-height: auto; }
-      .products-section, .ingredients-strip, .amazon-section { padding-left: 24px; padding-right: 24px; }
-      .filter-bar { padding-left: 24px; padding-right: 24px; }
-      .product-row-body { padding: 32px 24px; }
+      .mobile-menu { padding: 28px 24px; }
+      .page-hero-content { padding: 48px 24px 48px; }
+      .product-row-img { height: 280px; }
+      .product-row-body { padding: 40px 24px; }
       .product-row-btns { flex-direction: column; }
-      .amazon-section { flex-direction: column; align-items: flex-start; }
-      footer { padding: 36px 24px 20px; }
-      .footer-top { flex-direction: column; align-items: flex-start; gap: 28px; }
-      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 14px; }
+      .ingredients, .amazon-cta { padding-left: 24px; padding-right: 24px; }
+      footer { padding: 40px 24px 24px; }
+      .footer-top { flex-direction: column; align-items: flex-start; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header id="main-header">
   <a href="index.html" class="nav-logo">
     <span class="nav-logo-ag">Ag+</span>
     <span class="nav-logo-brand">Silver &amp; Care</span>
   </a>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="productos.html" class="active">Productos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="productos.html" class="active">Productos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul></nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </header>
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
@@ -225,109 +186,105 @@
   <a href="contacto.html">Contacto</a>
 </div>
 
-<!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="page-hero-inner">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
     <div class="page-hero-eyebrow reveal">Silver &amp; Care · Colección</div>
     <h1 class="page-hero-title reveal d1">Cuatro líneas.<br><em>Un ingrediente.</em></h1>
     <p class="page-hero-sub reveal d2">Plata coloidal pura al 99.99% formulada para el cuidado del cabello, las mascotas, el hogar y la ropa.</p>
   </div>
 </section>
 
-<!-- FILTER BAR -->
-<div class="filter-bar">
-  <button class="filter-btn active">Todos</button>
-  <button class="filter-btn">Ag+ Hair</button>
-  <button class="filter-btn">Ag+ Pets</button>
-  <button class="filter-btn">Ag+ Home</button>
-  <button class="filter-btn">Ag+ Cloth</button>
+<div class="product-tabs">
+  <button class="product-tab active" onclick="scrollTo('hair')">Ag+ Hair</button>
+  <button class="product-tab" onclick="scrollTo('pets')">Ag+ Pets</button>
+  <button class="product-tab" onclick="scrollTo('home')">Ag+ Home</button>
+  <button class="product-tab" onclick="scrollTo('cloth')">Ag+ Cloth</button>
 </div>
 
-<!-- PRODUCTS -->
-<section class="products-section">
+<div class="products-list">
 
-  <!-- AG+ HAIR -->
   <div class="product-row reveal" id="hair">
     <div class="product-row-img">
-      <img src="https://rosybrown-louse-492434.hostingersite.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-18-at-16.14.58.jpeg" alt="Ag+ Hair — Spray de plata coloidal para cabello" />
+      <img src="assets/ag-hair.jpeg" alt="Ag+ Hair — Spray de plata coloidal para cabello" />
     </div>
     <div class="product-row-body">
+      <span class="product-row-num">01</span>
       <div class="product-row-cat">Cuidado Capilar</div>
       <div class="product-row-name">Ag+ Hair</div>
       <div class="product-row-ppm">10–15 PPM · Spray</div>
-      <span class="product-tag">Uso diario</span>
+      <span class="product-row-tag">Uso diario</span>
       <p class="product-row-desc">Spray ligero para cabello y cuero cabelludo. Uso diario, sin residuos.</p>
       <p class="product-row-detail">Formulado con plata coloidal pura al 99.99% en una concentración de 10-15 PPM, diseñado para el cuidado diario del cabello y el cuero cabelludo. Textura ultra-ligera que no deja residuos ni pesa el cabello.</p>
       <div class="product-row-btns">
-        <a href="contacto.html" class="btn-dark">Contactar</a>
-        <a href="#" class="btn-outline-dark">Ver en Amazon</a>
+        <a href="contacto.html" class="btn btn-dark">Contactar</a>
+        <a href="#" class="btn btn-ghost-dark">Ver en Amazon</a>
       </div>
     </div>
   </div>
 
-  <!-- AG+ PETS -->
-  <div class="product-row reverse reveal" id="pets">
+  <div class="product-row alt reveal" id="pets">
     <div class="product-row-body">
+      <span class="product-row-num">02</span>
       <div class="product-row-cat">Cuidado de Mascotas</div>
       <div class="product-row-name">Ag+ Pets</div>
       <div class="product-row-ppm">15–20 PPM · Spray</div>
-      <span class="product-tag">Uso externo</span>
+      <span class="product-row-tag">Uso externo</span>
       <p class="product-row-desc">Spray externo para patas, pelaje y frescura entre baños. Suave y de uso diario.</p>
       <p class="product-row-detail">Concentración de 15-20 PPM especialmente formulada para uso externo en mascotas. Ideal para patas, pelaje y zonas de higiene. Sin ingredientes agresivos, seguro para uso frecuente.</p>
       <div class="product-row-btns">
-        <a href="contacto.html" class="btn-dark">Contactar</a>
-        <a href="#" class="btn-outline-dark">Ver en Amazon</a>
+        <a href="contacto.html" class="btn btn-dark">Contactar</a>
+        <a href="#" class="btn btn-ghost-dark">Ver en Amazon</a>
       </div>
     </div>
     <div class="product-row-img">
-      <img src="https://rosybrown-louse-492434.hostingersite.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-18-at-16.14.58-3.jpeg" alt="Ag+ Pets — Spray de plata coloidal para mascotas" loading="lazy" />
+      <img src="assets/ag-pets.jpeg" alt="Ag+ Pets — Spray de plata coloidal para mascotas" loading="lazy" />
     </div>
   </div>
 
-  <!-- AG+ HOME -->
   <div class="product-row reveal" id="home">
     <div class="product-row-img">
-      <img src="https://rosybrown-louse-492434.hostingersite.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-18-at-16.14.58-2.jpeg" alt="Ag+ Home — Solución de plata coloidal para el hogar" loading="lazy" />
+      <img src="assets/ag-home.jpeg" alt="Ag+ Home — Plata coloidal para el hogar" loading="lazy" />
     </div>
     <div class="product-row-body">
+      <span class="product-row-num">03</span>
       <div class="product-row-cat">Cuidado del Hogar</div>
       <div class="product-row-name">Ag+ Home</div>
       <div class="product-row-ppm">40–50 PPM · Spray</div>
-      <span class="product-tag">Superficies</span>
+      <span class="product-row-tag">Superficies</span>
       <p class="product-row-desc">Solución para superficies del hogar. Cocina, baño y espacios de uso diario.</p>
       <p class="product-row-detail">Alta concentración de 40-50 PPM para el cuidado de superficies en el hogar. Cocina, baño, encimeras y espacios de uso diario. Fórmula limpia sin cloro ni compuestos agresivos.</p>
       <div class="product-row-btns">
-        <a href="contacto.html" class="btn-dark">Contactar</a>
-        <a href="#" class="btn-outline-dark">Ver en Amazon</a>
+        <a href="contacto.html" class="btn btn-dark">Contactar</a>
+        <a href="#" class="btn btn-ghost-dark">Ver en Amazon</a>
       </div>
     </div>
   </div>
 
-  <!-- AG+ CLOTH -->
-  <div class="product-row reverse reveal" id="cloth">
+  <div class="product-row alt reveal" id="cloth">
     <div class="product-row-body">
+      <span class="product-row-num">04</span>
       <div class="product-row-cat">Ropa y Textiles</div>
       <div class="product-row-name">Ag+ Cloth</div>
       <div class="product-row-ppm">15–20 PPM · Aditivo</div>
-      <span class="product-tag">Lavadora</span>
+      <span class="product-row-tag">Lavadora</span>
       <p class="product-row-desc">Se añade directo a la lavadora. Para ropa deportiva, toallas y ropa de cama.</p>
-      <p class="product-row-detail">Diseñado para añadirse directamente al ciclo de lavado. Concentración de 15-20 PPM óptima para el cuidado de ropa deportiva, toallas, ropa de cama y textiles de uso frecuente. Compatible con cualquier detergente.</p>
+      <p class="product-row-detail">Diseñado para añadirse directamente al ciclo de lavado. Concentración de 15-20 PPM óptima para ropa deportiva, toallas y ropa de cama. Compatible con cualquier detergente.</p>
       <div class="product-row-btns">
-        <a href="contacto.html" class="btn-dark">Contactar</a>
-        <a href="#" class="btn-outline-dark">Ver en Amazon</a>
+        <a href="contacto.html" class="btn btn-dark">Contactar</a>
+        <a href="#" class="btn btn-ghost-dark">Ver en Amazon</a>
       </div>
     </div>
     <div class="product-row-img">
-      <img src="https://rosybrown-louse-492434.hostingersite.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-18-at-16.14.58-1.jpeg" alt="Ag+ Cloth — Plata coloidal para ropa y textiles" loading="lazy" />
+      <img src="assets/ag-cloth.jpeg" alt="Ag+ Cloth — Plata coloidal para ropa y textiles" loading="lazy" />
     </div>
   </div>
 
-</section>
+</div>
 
-<!-- INGREDIENTS STRIP -->
-<div class="ingredients-strip">
-  <span class="ingredients-title">Ingrediente base</span>
-  <div class="ingredients-list">
+<div class="ingredients">
+  <span class="ingredients-label">Ingrediente base</span>
+  <div class="ingredients-tags">
     <span class="ingredient-tag">Plata coloidal 99.99%</span>
     <span class="ingredient-tag">Small Batch</span>
     <span class="ingredient-tag">Sin rellenos</span>
@@ -337,23 +294,19 @@
   </div>
 </div>
 
-<!-- AMAZON SECTION -->
-<div class="amazon-section reveal">
-  <div class="amazon-text">
-    <h2>Compra directamente <em>en Amazon.</em></h2>
-    <p>Todos nuestros productos están disponibles en Amazon USA con envío Prime, compra segura y devolución garantizada.</p>
+<div class="amazon-cta reveal">
+  <div>
+    <h2 class="amazon-cta-title">Compra directamente <em>en Amazon.</em></h2>
+    <p class="amazon-cta-sub">Todos nuestros productos están disponibles en Amazon USA con envío Prime, compra segura y devolución garantizada.</p>
   </div>
-  <a href="#" class="btn-dark">Ver productos en Amazon</a>
+  <a href="#" class="btn btn-dark">Ver en Amazon</a>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-top">
-    <div class="footer-brand">
-      <div class="footer-logo">
-        <span class="footer-logo-ag">Ag+</span>
-        <span class="footer-logo-brand">Silver &amp; Care</span>
-      </div>
+    <div>
+      <span class="footer-logo-ag">Ag+</span>
+      <span class="footer-logo-brand">Silver &amp; Care</span>
       <p class="footer-tagline">Plata coloidal pura al 99.99% para el cuidado diario del cabello, las mascotas, el hogar y la ropa.</p>
     </div>
     <div class="footer-social">
@@ -363,21 +316,17 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span class="footer-copy">© 2026 Silver &amp; Care. Todos los derechos reservados.</span>
+    <span class="footer-copy">© 2026 Silver &amp; Care LLC. Todos los derechos reservados.</span>
     <nav class="footer-legal">
-      <a href="#">Política de Privacidad</a>
-      <a href="#">Política de Cookies</a>
-      <a href="#">Aviso Legal</a>
+      <a href="#">Privacidad</a><a href="#">Cookies</a><a href="#">Aviso Legal</a>
     </nav>
   </div>
 </footer>
 
 <script>
   (function() {
-    var header = document.getElementById('main-header');
-    function onScroll() { header.classList.toggle('scrolled', window.scrollY > 30); }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    var h = document.getElementById('main-header');
+    window.addEventListener('scroll', function() { h.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
   })();
   document.getElementById('hamburger').addEventListener('click', function() {
     document.getElementById('mobile-menu').classList.toggle('open');
@@ -389,21 +338,17 @@
       document.getElementById('hamburger').classList.remove('open');
     });
   });
-  // Filter buttons (visual only)
-  document.querySelectorAll('.filter-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
-      this.classList.add('active');
-    });
-  });
+  function scrollTo(id) {
+    var el = document.getElementById(id);
+    if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    document.querySelectorAll('.product-tab').forEach(function(t) { t.classList.remove('active'); });
+    event.target.classList.add('active');
+  }
   (function() {
-    var els = document.querySelectorAll('.reveal');
     var obs = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
-      });
-    }, { threshold: 0.08 });
-    els.forEach(function(el) { obs.observe(el); });
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.06 });
+    document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
   })();
 </script>
 </body>
